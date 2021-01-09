@@ -1,0 +1,838 @@
+# English (United States) translations for .
+# Copyright (C) 2010 ORGANIZATION
+# This file is distributed under the same license as the  project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  iRedAdmin\n"
+"Report-Msgid-Bugs-To: zhb@iredmail.org\n"
+"POT-Creation-Date: 2020-10-05 15:15+0800\n"
+"PO-Revision-Date: 2011-06-10 23:46+0800\n"
+"Last-Translator: Juris BALANDIS <juris.balandis@gmail.com>\n"
+"Language: lv_LV\n"
+"Language-Team: lv_LV <juris.balandis@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#, python-format
+msgid "%s days, %s hours, %s minutes."
+msgstr "%s dienas, %s stundas, %s minūtes."
+
+#, python-format
+msgid "(%d messages, %s.)"
+msgstr "(%d ziņas, %s.)"
+
+#, python-format
+msgid "(%d%% full, %d messages, %s.)"
+msgstr "(%d%% pilns, %d ziņas, %s.)"
+
+msgid "(Mailbox is empty.)"
+msgstr ""
+
+msgid "Account already exists, please choose another one."
+msgstr "Konts jau pastāv, lūdzu, izvēlieties citu."
+
+msgid "Account does not exist."
+msgstr "Konts nepastāv."
+
+msgid "Account is disabled."
+msgstr "Konts ir atspējots."
+
+msgid "Account is global admin"
+msgstr "Konts ir globālais administrators"
+
+msgid "Activate account"
+msgstr "Aktivizēt kontu"
+
+msgid "Activities"
+msgstr "Darbības"
+
+msgid "Add"
+msgstr "Pievienot"
+
+msgid "Add account"
+msgstr "Pievienot kontu"
+
+msgid "Add admin"
+msgstr "Pievienot administratoru"
+
+msgid "Add domain"
+msgstr "Pievienot domēnu"
+
+msgid "Add mail user"
+msgstr "Pievienot e-pasta lietotāju"
+
+msgid "Add mail user under domain"
+msgstr "Pievienot e-pasta lietotāju domēnā"
+
+msgid "Add one"
+msgstr "Pievienot vienu"
+
+msgid "Add one more?"
+msgstr "Vai pievienot vēl vienu?"
+
+msgid "Admin"
+msgstr "Administrators"
+
+msgid "Admin Log"
+msgstr "Administratora žurnāls"
+
+msgid "Admin created."
+msgstr "Administrators izveidots."
+
+msgid "Admin login"
+msgstr "Administratora pieteikšanās"
+
+msgid "Admins"
+msgstr "Administratori"
+
+#, python-format
+msgid "Admins under domain: %s"
+msgstr "Administratori domēnā: %s"
+
+msgid "Advanced"
+msgstr "Papildus"
+
+msgid "Alias domains:"
+msgstr "Aizstājvārdu domēni:"
+
+msgid "All admins"
+msgstr "Visi administratori"
+
+msgid "All domains"
+msgstr "Visi domēni"
+
+msgid ""
+"All domains managed by this admin share the mailbox quota and limit of "
+"mail accounts."
+msgstr ""
+
+msgid "All domains under your control."
+msgstr "Visi jūsu kontrolē esošie domēni."
+
+msgid "Allocated"
+msgstr "Piešķirtais"
+
+msgid "Already reaches account limit (mail aliases)."
+msgstr "Jau sasniedz konta limitu (e-pasta aizstājvārdus)."
+
+msgid "Already reaches account limit (mail domains)."
+msgstr "Jau sasniedz konta ierobežojumu (e-pasta domēni)."
+
+msgid "Already reaches account limit (mail users)."
+msgstr "Jau sasniedz konta limitu (e-pasta lietotāji)."
+
+msgid "Already reaches account limit (mailbox quota)."
+msgstr "Jau sasniedz konta limitu (pastkastes kvota)."
+
+msgid "Already reaches account limit (mailing lists)."
+msgstr "Jau sasniedz konta limitu (e-pasta sūtījumu saraksti)."
+
+msgid "Apply"
+msgstr "Lietot"
+
+#, python-format
+msgid "At least %d characters."
+msgstr "Vismaz %d rakstzīmes."
+
+#, python-format
+msgid "At least %s characters."
+msgstr "Vismaz %s rakstzīmes."
+
+msgid "At least one digit number"
+msgstr "Vismaz viens cipars"
+
+msgid "At least one letter"
+msgstr "Vismaz viens burts"
+
+msgid "At least one special character:"
+msgstr "Vismaz viena speciālā rakstzīme:"
+
+msgid "At least one uppercase letter"
+msgstr "Vismaz viens lielais burts"
+
+msgid "Available quota:"
+msgstr "Pieejamā kvota:"
+
+msgid "Backup"
+msgstr "Dublēšana"
+
+msgid "Backup MX"
+msgstr "Dublēšana MX"
+
+msgid "Can not be longer than"
+msgstr ""
+
+msgid "Can not be shorter than"
+msgstr ""
+
+msgid "Choose Action"
+msgstr "Izvēlieties darbību"
+
+msgid "Company/Organization Name"
+msgstr "Uzņēmuma/Organizācijas nosaukums"
+
+msgid "Confirm new password"
+msgstr "Apstiprināt jauno paroli"
+
+msgid "Contact webmaster"
+msgstr "Sazināties ar WEBMASTER"
+
+msgid "Content of disclaimer will be appended to outgoing emails."
+msgstr ""
+
+msgid "Current password is incorrect."
+msgstr "Pašreizējā parole nav pareiza."
+
+msgid "DISABLED"
+msgstr "ATSPĒJOTS"
+
+msgid "Dashboard"
+msgstr "Informācijas panelis"
+
+msgid "Default language for new user"
+msgstr "Jauna lietotāja noklusējuma valoda"
+
+msgid "Delete"
+msgstr "Dzēst"
+
+msgid "Delete account"
+msgstr "Dzēst kontu"
+
+msgid "Delete all in database"
+msgstr "Dzēst visu datu bāzē"
+
+msgid "Delete mailboxes"
+msgstr "Pastkastu dzēšana"
+
+msgid "Delete selected log"
+msgstr "Dzēst atlasīto žurnālu"
+
+msgid "Disable"
+msgstr "Atspējot"
+
+msgid "Disable account"
+msgstr "Atspējot kontu"
+
+msgid "Disabled"
+msgstr "Atspējots"
+
+msgid "Disabled accounts"
+msgstr "Atspējotie konti"
+
+msgid "Disabled domains"
+msgstr "Atspējotie domēni"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Display Name"
+msgstr "Nosaukums"
+
+msgid "Domain"
+msgstr "Domēns"
+
+msgid "Domain Admins"
+msgstr "Domēna administratori"
+
+msgid "Domain Name"
+msgstr "Domēna nosaukums"
+
+msgid "Domain already exists. Please check both primary or alias domains."
+msgstr "Domēns jau pastāv. Lūdzu, pārbaudiet primāro un aizstājvārdu domēnus."
+
+msgid "Domain created."
+msgstr "Domēns izveidots."
+
+msgid "Domain is active, but marked as backup MX."
+msgstr "Domēns ir aktīvs, bet atzīmēts kā dublējumkopija MX."
+
+msgid "Domain is active, but relay to other host"
+msgstr "Domēns ir aktīvs, bet relejs uz citu resursdatoru"
+
+msgid "Domain is disabled."
+msgstr "Domēns ir atspējots."
+
+msgid "Domain name is empty."
+msgstr "Domēna nosaukums ir tukšs."
+
+msgid "Domain name or username is missed."
+msgstr "Trūkst domēna vārda vai lietotājvārda."
+
+msgid ""
+"Domain quota size exceeded. Please contact your administrator or service "
+"provider to increase it."
+msgstr ""
+"Pārsniegts domēna kvotas lielums. Lai palielinātu, sazinieties ar "
+"administratoru vai pakalpojumu sniedzēju."
+
+msgid "Domains"
+msgstr "Domēni"
+
+msgid "Domains and Accounts"
+msgstr "Domēni un konti"
+
+msgid "Dump disclaimer automatically"
+msgstr ""
+
+msgid "Edit account profile"
+msgstr "Rediģēt konta profilu"
+
+msgid "Edit domain profile"
+msgstr "Rediģēt domēna profilu"
+
+msgid "Edit quota setting"
+msgstr "Rediģēt kvotas iestatījumu"
+
+msgid "Email address was changed."
+msgstr "E-pasta adrese tika mainīta."
+
+msgid "Emails"
+msgstr "E-pasti"
+
+msgid "Empty password is not allowed."
+msgstr "Tukša parole nav atļauta."
+
+msgid "Enable"
+msgstr "Iespējot"
+
+msgid "Enable this account"
+msgstr "Iespējot šo kontu"
+
+msgid "Enable this domain"
+msgstr "Iespējot šo domēnu"
+
+msgid "Error"
+msgstr "Kļūda"
+
+msgid "Error while checking new version of iRedAdmin:"
+msgstr ""
+
+msgid "Error:"
+msgstr "Kļūda:"
+
+msgid "Events"
+msgstr "Notikumi"
+
+msgid "Everyone can send mail to this address"
+msgstr "Visi var sūtīt e-pastu uz šo adresi"
+
+msgid ""
+"Exceeded domain account limit. Please contact your administrator or "
+"service provider to increase it."
+msgstr ""
+"Pārsniegts domēna konta ierobežojums. Lai to palielinātu, sazinieties ar "
+"administratoru vai pakalpojumu sniedzēju."
+
+msgid "Filter accounts by first character in email addresses"
+msgstr "Filtrēt kontus pēc pirmās rakstzīmes e-pasta adresēs"
+
+msgid "Filter domains by first character in mail domain name"
+msgstr "Filtrēt domēnus pēc pirmās rakstzīmes pasta domēna nosaukumā"
+
+msgid "Filter:"
+msgstr "Filtrs:"
+
+msgid "First Page"
+msgstr "Pirmā lappuse"
+
+msgid "First name"
+msgstr "Vārds"
+
+msgid "Full name"
+msgstr "Pilns vārds"
+
+msgid "General"
+msgstr "Vispārīgi"
+
+msgid "Global Admin"
+msgstr "Globālais administrators"
+
+msgid "Grant admin"
+msgstr "Piešķirt administratoram"
+
+msgid "Hostname"
+msgstr "Resursa nosaukums"
+
+msgid "IMAP Login:"
+msgstr ""
+
+msgid "IP Address"
+msgstr "IP adrese"
+
+msgid "Invalid account."
+msgstr "Nederīgs konts."
+
+msgid "Invalid action."
+msgstr "Nederīga darbība."
+
+msgid "Invalid domain name."
+msgstr "Nederīgs domēna nosaukums."
+
+msgid "Invalid mail address."
+msgstr "Nederīga e-pasta adrese."
+
+msgid "Is a global admin."
+msgstr "Ir globāls administrators."
+
+msgid "Job Title"
+msgstr "Darba nosaukums"
+
+#, python-format
+msgid "Keep mailbox for %d days"
+msgstr "Paturēt pastkasti uz %d dienām"
+
+#, python-format
+msgid "Keep mailbox for %d months"
+msgstr "Paturēt pastkasti %d mēnešus"
+
+#, python-format
+msgid "Keep mailbox for %d weeks"
+msgstr "Paturēt pastkasti %d nedēļas"
+
+#, python-format
+msgid "Keep mailbox for %d years"
+msgstr "Paturēt pastkasti %d gadus"
+
+msgid "Keep mailbox for 1 day"
+msgstr "Paturēt pastkasti 1 dienu"
+
+msgid "Keep mailbox for 1 month "
+msgstr "Paturēt pastkasti 1 mēnesi "
+
+msgid "Keep mailbox for 1 week"
+msgstr "Paturēt pastkasti 1 nedēļu"
+
+msgid "Keep mailbox for 1 year"
+msgstr "Paturēt pastkasti 1 gadu"
+
+msgid "Keep mailbox forever"
+msgstr "Saglabāt pastkasti uz mūžu"
+
+msgid "Last Page"
+msgstr "Pēdējā lapa"
+
+msgid "Last name"
+msgstr "Uzvārds"
+
+msgid "Leave it empty to use server-wide default setting."
+msgstr ""
+
+msgid "List all mail users."
+msgstr "Visu e-pastu lietotāju saraksts"
+
+#, python-format
+msgid "Logged in as %s"
+msgstr "Pieteicies kā %s"
+
+msgid "Login"
+msgstr "Pieteikšanās"
+
+msgid "Login from your IP address is not allowed."
+msgstr "Pieteikšanās no jūsu IP adreses nav atļauta."
+
+msgid "Login required"
+msgstr "Nepieciešama pieteikšanās"
+
+msgid "Login to manage your mail domains & accounts"
+msgstr "DOMĒNU - KONTU PĀRVALDĪBA"
+
+msgid "Logout"
+msgstr "Atteikšanās"
+
+msgid "Mail Address"
+msgstr "E-pasta adrese"
+
+msgid "Mail Users"
+msgstr "E-pasta lietotāji"
+
+msgid "Mailbox Quota"
+msgstr "Pastkastes kvota"
+
+msgid "Make sure disclaimer work as expected:"
+msgstr ""
+
+msgid "Mark as domain admin"
+msgstr "Atzīmēt kā domēna administratoru"
+
+msgid "Mark as global admin"
+msgstr "Atzīmēt kā globālo administratoru"
+
+msgid "Mark this user as global admin"
+msgstr ""
+
+msgid "Maximum password length"
+msgstr ""
+
+msgid "Member of mailing lists:"
+msgstr "E-pasta sūtījumu sarakstu dalībnieks:"
+
+msgid "Members"
+msgstr "Dalībnieki"
+
+msgid "Members and moderators"
+msgstr "Dalībnieki un regulētāji"
+
+msgid "Message"
+msgstr "Ziņa"
+
+msgid "Minimum password length"
+msgstr ""
+
+msgid "Mobile"
+msgstr "Mobilais"
+
+msgid "Moderators"
+msgstr "Regulētāji"
+
+#, python-format
+msgid "Must be %s - %s characters."
+msgstr ""
+
+msgid "Need a strong password?"
+msgstr "Vai nepieciešama stipra parole?"
+
+msgid "Network"
+msgstr "Tīkls"
+
+msgid "New Mail Delivered:"
+msgstr ""
+
+msgid "New password"
+msgstr "Jauna parole"
+
+#, python-format
+msgid "New password must NOT contain more than %s characters."
+msgstr "Jaunā parole nedrīkst saturēt vairāk kā %s rakstzīmes."
+
+#, python-format
+msgid "New password must contain at least %s characters."
+msgstr "Jaunā parolē jābūt vismaz %s rakstzīmēm."
+
+msgid "New passwords are not match."
+msgstr "Jaunās paroles nesakrīt."
+
+#, python-format
+msgid ""
+"New version of iRedAdmin, %s, is now available for upgrading. <a "
+"href='https://docs.iredmail.org/migrate.or.upgrade.iredadmin.html' "
+"class='button green'>Upgrade tutorial</a>."
+msgstr ""
+
+msgid "Next Page"
+msgstr "Nākamā lappuse"
+
+msgid "No account selected."
+msgstr "Nav atlasīts neviens konts."
+
+msgid "No admin log."
+msgstr "Nav administratora žurnāla."
+
+msgid "No digit number in password."
+msgstr "Parolē nav ciparu."
+
+msgid "No domain under control."
+msgstr "Neviens domēns netiek kontrolēts."
+
+msgid "No letter in password."
+msgstr "Parolē nav burtu."
+
+msgid "No mail admin assigned."
+msgstr ""
+
+msgid "No mail domain available."
+msgstr "Nav pieejams neviens e-pasta domēns."
+
+msgid "No mail user available."
+msgstr "Nav pieejams neviens e-pasta lietotājs."
+
+#, python-format
+msgid "No more than %d characters."
+msgstr "Ne vairāk kā %d rakstzīmes."
+
+#, python-format
+msgid "No more than %s characters."
+msgstr "Ne vairāk kā %s rakstzīmes."
+
+msgid "No special character in password."
+msgstr "Parolē nav īpašas rakstzīmes."
+
+msgid "No uppercase letter in password."
+msgstr "Nav lielā burta parolē."
+
+msgid "Not a global admin."
+msgstr "Nav globāls administrators."
+
+msgid "Not allowed to create mail user under this domain."
+msgstr "Šajā domēnā nav atļauts izveidot e-pasta lietotāju."
+
+msgid "Note: Global admin can manage all mail domains."
+msgstr ""
+
+msgid "Number of domains"
+msgstr "Domēnu skaits"
+
+msgid "Number of users"
+msgstr "Lietotāju skaits"
+
+msgid "Old password"
+msgstr "Vecā parole"
+
+msgid ""
+"One IP address or network per line. Invalid address or network will be "
+"discarded."
+msgstr ""
+"Viena IP adrese vai tīkls katrā rindā. Nederīga adrese vai tīkls tiks "
+"atmests."
+
+msgid "One mail address per line. Invalid address will be discarded."
+msgstr "Viena pasta adrese vienā rindiņā. Nederīga adrese tiks atmesta."
+
+msgid "Or create other mail accounts:"
+msgstr "Vai izveidot citus e-pasta kontus:"
+
+msgid "POP3 Login:"
+msgstr ""
+
+msgid "Password"
+msgstr "Parole"
+
+msgid "Password is empty."
+msgstr "Parole ir tukša."
+
+msgid "Password is too long."
+msgstr "Parole ir pārāk gara."
+
+msgid "Password is too short."
+msgstr "Parole ir pārāk īsa."
+
+msgid "Password last change:"
+msgstr "Pēdējā paroles maiņa:"
+
+msgid "Password must contain"
+msgstr "Parolē ir jābūt"
+
+msgid "Permission denied."
+msgstr "Atļauja liegta."
+
+msgid "Plain text only"
+msgstr ""
+
+msgid "Please do not use non-ascii character in password."
+msgstr "Lūdzu, nelietojiet parolē non-ascii rakstzīmes."
+
+msgid "Please select at least one account."
+msgstr "Lūdzu, atlasiet vismaz vienu kontu."
+
+msgid "Please select at least one domain."
+msgstr "Lūdzu, atlasiet vismaz vienu domēnu."
+
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+msgid "Preferred language"
+msgstr "Vēlamā valoda"
+
+msgid "Previous Page"
+msgstr "Iepriekšējā lappuse"
+
+msgid "Profile has been updated."
+msgstr "Profils ir atjaunināts."
+
+msgid "Profile of admin:"
+msgstr "Administratora profils:"
+
+msgid "Profile of domain:"
+msgstr "Domēna profils:"
+
+msgid "Profile of user:"
+msgstr "Lietotāja profils:"
+
+msgid "Profile updated failed."
+msgstr "Profilu atjaunināt neizdevās."
+
+msgid "Quota"
+msgstr "Kvota"
+
+msgid "Records were successfully updated."
+msgstr "Ieraksti tika veiksmīgi atjaunināti."
+
+msgid "Relay"
+msgstr "Relejs"
+
+msgid "Revoke admin privilege"
+msgstr "Atsaukt administratora privilēģiju"
+
+msgid "Save changes"
+msgstr "Saglabāt izmaiņas"
+
+msgid ""
+"Security token did not match. Please refresh current page and re-perform "
+"form action."
+msgstr ""
+"Drošības pilnvara nesakrita. Lūdzu, atsvaidziniet pašreizējo lapu un "
+"atkārtoti veiciet darbību."
+
+msgid "Selected accounts were deleted."
+msgstr "Atlasītie konti tika dzēsti."
+
+msgid "Selected accounts were disabled."
+msgstr "Atlasītie konti tika atspējoti."
+
+msgid "Selected accounts were enabled."
+msgstr "Atlasītie konti tika iespējoti."
+
+msgid "Selected accounts were marked as domain admin."
+msgstr "Atlasītie konti tika atzīmēti kā domēna administrators."
+
+msgid "Selected accounts were marked as global admin."
+msgstr "Atlasītie konti tika atzīmēti kā globālais administrators."
+
+msgid "Selected accounts were unmarked as domain admin."
+msgstr "Atlasītie konti netika atzīmēti kā domēna administrators."
+
+msgid "Selected accounts were unmarked as global admin."
+msgstr "Atlasītie konti netika atzīmēti kā globālais administrators."
+
+msgid "Selected domains have been deleted."
+msgstr "Atlasītie domēni ir izdzēsti."
+
+msgid "Selected domains were disabled."
+msgstr "Atlasītie domēni tika atspējoti."
+
+msgid "Selected domains were enabled."
+msgstr "Atlasītie domēni tika iespējoti."
+
+msgid "Selected log records were deleted."
+msgstr "Atlasītie žurnāla ieraksti tika izdzēsti."
+
+msgid "Server Load"
+msgstr "Servera slodze"
+
+msgid ""
+"Server-side size limit exceeded. Please increase \"sizelimit\" in your "
+"LDAP server."
+msgstr ""
+"Pārsniegts servera lieluma ierobežojums. Lūdzu, palieliniet \"sizelimit\""
+" LDAP serverī."
+
+msgid "Session expired, please re-login."
+msgstr "Sesija beidzās, lūdzu, atkārtoti piesakieties."
+
+msgid "Set to 0 for unlimited."
+msgstr "Neierobežoti, iestatīt uz 0."
+
+#, python-format
+msgid "Some addresses have been discarded because they have been used: %s."
+msgstr "Dažas adreses ir atmestas, jo tās ir izmantotas: %s."
+
+msgid "Standalone admin account cannot be an user of local domain."
+msgstr "Atsevišķs administratora konts nevar būt lokālā domēna lietotājs."
+
+msgid "Store password in plain text"
+msgstr "Saglabāt paroli vienkāršā tekstā"
+
+msgid "Stored"
+msgstr ""
+
+msgid "Stored emails"
+msgstr "Saglabātie e-pasti"
+
+msgid "Submit"
+msgstr "Iesniegt"
+
+msgid "Submited domain name is incorrect."
+msgstr "Iesniegtais domēna nosaukums ir nepareizs."
+
+msgid "Support"
+msgstr "Atbalsts"
+
+msgid "System Information"
+msgstr "Informācija par sistēmu"
+
+msgid "Telephone Number"
+msgstr "Tālruņa numurs"
+
+msgid "Time"
+msgstr "Laiks"
+
+msgid "Time zone"
+msgstr "Laika josla"
+
+msgid "Unban IP address"
+msgstr ""
+
+msgid "Unlimited"
+msgstr "Neierobežots"
+
+msgid "Unmark as domain admin"
+msgstr "Noņemt atzīmi kā domēna administrators"
+
+msgid "Unmark as global admin"
+msgstr "Noņemt atzīmi kā globālais administrators"
+
+msgid "Unrestricted"
+msgstr "Neierobežots"
+
+msgid "Update whitelists and blacklists"
+msgstr "Atjaunināt baltos un melnos sarakstus"
+
+msgid "Uptime"
+msgstr "Darbības laiks"
+
+msgid "Use this password"
+msgstr "Izmantot šo paroli"
+
+msgid "Used"
+msgstr "Izmantots"
+
+msgid "User"
+msgstr "Lietotājs"
+
+msgid "User created."
+msgstr "Lietotājs izveidots."
+
+msgid "User login (self-service)"
+msgstr "Lietotāja pieteikšanās (pašapkalpošanās)"
+
+msgid "User/Employee ID"
+msgstr "Lietotāja/darbinieka ID"
+
+msgid "Username"
+msgstr "Lietotājvārds"
+
+msgid "Username must be an valid email address."
+msgstr "Lietotājvārdam ir jābūt derīgai e-pasta adresei."
+
+msgid "Username or password is incorrect."
+msgstr "Nepareiz Lietotājvārds vai parole."
+
+msgid "Users"
+msgstr "Lietotāji"
+
+#, python-format
+msgid "Users under domain: %s"
+msgstr "Lietotāji domēnā: %s"
+
+msgid "Users under same domain"
+msgstr "Lietotāji ar vienu un to pašu domēnu"
+
+msgid "Users under same domain and its sub-domains"
+msgstr "Lietotāji ar vienu un to pašu domēnu un tā apakšdomēniem"
+
+msgid "Who can send email to this list"
+msgstr "Kurš var sūtīt e-pasta ziņojumu šim sarakstam"
+
+msgid "You are not allowed to update global domain admin's profile."
+msgstr "Jums nav atļauts atjaunināt globālā domēna administratora profilu."
+
+msgid "or longer than"
+msgstr ""
+
+msgid "without verifying local recipients"
+msgstr "nepārbaudot vietējos saņēmējus"
+

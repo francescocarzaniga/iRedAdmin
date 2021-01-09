@@ -51,21 +51,30 @@ if which systemctl &>/dev/null; then
     export SYSTEMD_SERVICE_USER_DIR='/etc/systemd/system/multi-user.target.wants/'
 fi
 
+# Python.
+export CMD_PYTHON3='/usr/bin/python3'
+export CMD_PIP3='/usr/bin/pip3'
+
+# uwsgi
+export CMD_UWSGI='/usr/bin/uwsgi'
+
 if [ X"${KERNEL_NAME}" == X"LINUX" ]; then
-    export PYTHON_BIN='/usr/bin/python2'
+    export DISTRO_VERSION=$(awk -F'"' '/^VERSION_ID=/ {print $2}' /etc/os-release)
 
     if [ -f /etc/redhat-release ]; then
         # RHEL/CentOS
         export DISTRO='RHEL'
-        export DISTRO_VERSION='7'
-        if [ -x /usr/bin/dnf ]; then
-            export DISTRO_VERSION='8'
+        export CMD_UWSGI='/usr/sbin/uwsgi'
+
+        if [ X"${DISTRO_VERSION}" == X'8' ]; then
+            # CentOS 8 doesn't have uwsgi package, we will install it with pip3.
+            export CMD_UWSGI='/usr/local/bin/uwsgi'
         fi
 
         export HTTPD_RC_SCRIPT_NAME='httpd'
         export CRON_SPOOL_DIR='/var/spool/cron'
 
-        if [[ -d /opt/www/iredadmin ]]; then
+        if [[ -L /opt/www/iredadmin ]]; then
             export HTTPD_SERVERROOT='/opt/www'
         else
             export HTTPD_SERVERROOT='/var/www'
@@ -73,10 +82,11 @@ if [ X"${KERNEL_NAME}" == X"LINUX" ]; then
     elif [ -f /etc/lsb-release ]; then
         # Ubuntu
         export DISTRO='UBUNTU'
+
         export HTTPD_RC_SCRIPT_NAME='apache2'
         export CRON_SPOOL_DIR='/var/spool/cron/crontabs'
 
-        if [ -d /opt/www/iredadmin ]; then
+        if [ -L /opt/www/iredadmin ]; then
             export HTTPD_SERVERROOT='/opt/www'
         else
             export HTTPD_SERVERROOT='/usr/share/apache2'
@@ -84,10 +94,11 @@ if [ X"${KERNEL_NAME}" == X"LINUX" ]; then
     elif [ -f /etc/debian_version ]; then
         # Debian
         export DISTRO='DEBIAN'
+
         export HTTPD_RC_SCRIPT_NAME='apache2'
         export CRON_SPOOL_DIR='/var/spool/cron/crontabs'
 
-        if [ -d /opt/www/iredadmin ]; then
+        if [ -L /opt/www/iredadmin ]; then
             export HTTPD_SERVERROOT='/opt/www'
         else
             export HTTPD_SERVERROOT='/usr/share/apache2'
@@ -107,13 +118,15 @@ elif [ X"${KERNEL_NAME}" == X'FREEBSD' ]; then
     export DISTRO='FREEBSD'
     export SYSRC='/usr/sbin/sysrc'
 
-    export PYTHON_BIN='/usr/local/bin/python2'
+    export CMD_PYTHON3='/usr/local/bin/python3'
+    export CMD_PIP3='/usr/local/bin/pip3'
+    export CMD_UWSGI='/usr/local/bin/uwsgi'
     export CRON_SPOOL_DIR='/var/cron/tabs'
     export NGINX_SNIPPET_CONF='/usr/local/etc/nginx/templates/iredadmin.tmpl'
     export NGINX_SNIPPET_CONF2='/usr/local/etc/nginx/templates/iredadmin-subdomain.tmpl'
     export NGINX_SNIPPET_CONF3='/usr/local/etc/nginx/conf.d/default.conf'
 
-    if [ -d /opt/www/iredadmin ]; then
+    if [ -L /opt/www/iredadmin ]; then
         export HTTPD_SERVERROOT='/opt/www'
     else
         export HTTPD_SERVERROOT='/usr/local/www'
@@ -125,7 +138,9 @@ elif [ X"${KERNEL_NAME}" == X'FREEBSD' ]; then
         export HTTPD_RC_SCRIPT_NAME='apache22'
     fi
 elif [ X"${KERNEL_NAME}" == X'OPENBSD' ]; then
-    export PYTHON_BIN='/usr/local/bin/python2'
+    export CMD_PYTHON3='/usr/local/bin/python3'
+    export CMD_PIP3='/usr/local/bin/pip3'
+    export CMD_UWSGI='/usr/local/bin/uwsgi'
     export DISTRO='OPENBSD'
     export CRON_SPOOL_DIR='/var/cron/tabs'
 
@@ -151,31 +166,6 @@ if [ $# -gt 0 ]; then
     if echo ${HTTPD_SERVERROOT} | grep '/iredadmin/*$' > /dev/null; then
         export HTTPD_SERVERROOT="$(dirname ${HTTPD_SERVERROOT})"
     fi
-fi
-
-# Dependent package names
-# SimpleJson
-export DEP_PY_JSON='simplejson'
-# dnspython
-export DEP_PY_DNS='python-dns'
-# pycurl
-export DEP_PY_CURL='python-pycurl'
-# requests
-export DEP_PY_REQUESTS='python-requests'
-if [ X"${DISTRO}" == X'RHEL' ]; then
-    :
-elif [ X"${DISTRO}" == X'DEBIAN' -o X"${DISTRO}" == X'UBUNTU' ]; then
-    export DEP_PY_JSON='python-simplejson'
-elif [ X"${DISTRO}" == X'OPENBSD' ]; then
-    export DEP_PY_JSON='py-simplejson'
-    export DEP_PY_CURL='py-curl'
-    export DEP_PY_DNS='py-dnspython'
-    export DEP_PY_REQUESTS='py-requests'
-elif [ X"${DISTRO}" == X'FREEBSD' ]; then
-    export DEP_PY_JSON='devel/py-simplejson'
-    export DEP_PY_CURL='ftp/py-pycurl'
-    export DEP_PY_DNS='dns/py-dnspython'
-    export DEP_PY_REQUESTS='www/py-requests'
 fi
 
 # iRedAdmin directory and config file.
@@ -271,7 +261,7 @@ check_mlmmjadmin_installation()
 
 install_pkg()
 {
-    echo "Install package: $@"
+    echo "Install package(s): $@"
 
     if [ X"${DISTRO}" == X'RHEL' ]; then
         yum -y install $@
@@ -283,6 +273,17 @@ install_pkg()
         pkg_add -r $@
     else
         echo "<< ERROR >> Please install package(s) manually: $@"
+    fi
+}
+
+has_python_module()
+{
+    mod="$1"
+    ${CMD_PYTHON3} -c "import $mod" &>/dev/null
+    if [ X"$?" == X'0' ]; then
+        echo 'YES'
+    else
+        echo 'NO'
     fi
 }
 
@@ -305,17 +306,6 @@ add_missing_parameter()
             # Value must be quoted as string.
             echo "${var} = '${value}'" >> ${IRA_CONF_PY}
         fi
-    fi
-}
-
-has_python_module()
-{
-    mod="$1"
-    ${PYTHON_BIN} -c "import $mod" &>/dev/null
-    if [ X"$?" == X'0' ]; then
-        echo 'YES'
-    else
-        echo 'NO'
     fi
 }
 
@@ -540,10 +530,6 @@ echo "* Creating symbol link ${IRA_ROOT_DIR} to ${NEW_IRA_ROOT_DIR}"
 cd ${HTTPD_SERVERROOT}
 ln -s ${name_new_version} iredadmin
 
-# Delete all sessions to force admins to re-login.
-cd ${NEW_IRA_ROOT_DIR}/tools/
-${PYTHON_BIN} delete_sessions.py
-
 # Add missing setting parameters.
 if grep 'amavisd_enable_logging.*True.*' ${IRA_CONF_PY} &>/dev/null; then
     add_missing_parameter 'amavisd_enable_policy_lookup' True 'Enable per-recipient spam policy, white/blacklist.'
@@ -666,23 +652,104 @@ perl -pi -e 's#LDAP_SERVER_NAME#LDAP_SERVER_PRODUCT_NAME#g' ${IRA_CONF_PY}
 # Remove deprecated setting: ENABLE_SELF_SERVICE, it's now a per-domain setting.
 perl -pi -e 's#^(ENABLE_SELF_SERVICE.*)##g' ${IRA_CONF_PY}
 
-# Check dependent packages. Prompt to install missed ones manually.
-echo "* Check and install dependent Python modules:"
-echo "  + [required] json or simplejson"
-if [ X"$(has_python_module json)" == X'NO' \
-     -a X"$(has_python_module simplejson)" == X'NO' ]; then
-    install_pkg ${DEP_PY_JSON}
+
+# Dependent packages.
+export REQUIRED_PKGS=""
+export PIP3_MODS=""
+# Python modules.
+export PKG_PY_PIP='python3-pip'
+export PKG_PY_LDAP='python3-ldap'
+export PKG_PY_MYSQL='python3-pymysql'
+export PKG_PY_PGSQL='python3-psycopg2'
+export PKG_PY_JSON='python3-simplejson'
+export PKG_PY_DNS='python3-dnspython'
+export PKG_PY_REQUESTS='python3-requests'
+export PKG_PY_JINJA='python3-jinja2'
+# Python modules installed with pip3: uwsgi.
+
+if [ X"${DISTRO}" == X'RHEL' ]; then
+    if [ X"${DISTRO_VERSION}" == X'7' ]; then
+        export PKG_PY_MYSQL='python36-PyMySQL'
+        export PKG_PY_JSON='python36-simplejson'
+        export PKG_PY_JINJA='python36-jinja2'
+        export REQUIRED_PKGS="${REQUIRED_PKGS} uwsgi uwsgi-plugin-python36 uwsgi-plugin-syslog"
+    else
+        if [ ! -x ${CMD_UWSGI} ]; then
+            export REQUIRED_PKGS="${REQUIRED_PKGS} python3-devel python3-pip"
+            export PIP3_MODS="${PIP3_MODS} uwsgi"
+        fi
+    fi
+
+    export PKG_PY_DNS='python3-dns'
+elif [ X"${DISTRO}" == X'DEBIAN' -o X"${DISTRO}" == X'UBUNTU' ]; then
+    export REQUIRED_PKGS="${REQUIRED_PKGS} uwsgi-core uwsgi-plugin-python3"
+
+    if [ X"${DISTRO_VERSION}" == X'9' ]; then
+        export PKG_PY_LDAP='python3-pyldap'
+    else
+        export PKG_PY_LDAP='python3-ldap'
+    fi
+elif [ X"${DISTRO}" == X'OPENBSD' ]; then
+    export PKG_PY_PIP='py3-pip'
+    export PKG_PY_JSON='py3-simplejson'
+    export PKG_PY_DNS='py3-dnspython'
+    export PKG_PY_REQUESTS='py3-requests'
+    export PKG_PY_JINJA='py3-jinja2'
+
+    if [ ! -x ${CMD_UWSGI} ]; then
+        export PIP3_MODS="${PIP3_MODS} uwsgi"
+    fi
+elif [ X"${DISTRO}" == X'FREEBSD' ]; then
+    export PKG_PY_PIP='devel/py-pip'
+    export PKG_UWSGI="www/uwsgi"
+    export PKG_PY_JSON='devel/py-simplejson'
+    export PKG_PY_DNS='dns/py-dnspython'
+    export PKG_PY_REQUESTS='www/py-requests'
+    export PKG_PY_JINJA='devel/py-Jinja2'
+
+    if [ ! -x ${CMD_UWSGI} ]; then
+        export REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_UWSGI}"
+    fi
 fi
 
-echo "  + [required] dnspython"
-[ X"$(has_python_module dns)" == X'NO' ] && install_pkg ${DEP_PY_DNS}
+echo "* Check and install required packages."
+if egrep '^backend.*ldap' ${IRA_CONF_PY} &>/dev/null; then
+    [ X"$(has_python_module ldap)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_LDAP}"
+    [ X"$(has_python_module pymysql)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_MYSQL}"
+elif egrep '^backend.*mysql' ${IRA_CONF_PY} &>/dev/null; then
+    [ X"$(has_python_module pymysql)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_MYSQL}"
+elif egrep '^backend.*pgsql' ${IRA_CONF_PY} &>/dev/null; then
+    [ X"$(has_python_module psycopg2)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_PGSQL}"
+fi
+[ X"$(has_python_module pip)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_PIP}"
+[ X"$(has_python_module simplejson)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_JSON}"
+[ X"$(has_python_module dns)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_DNS}"
+[ X"$(has_python_module requests)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_REQUESTS}"
+if [ X"$(has_python_module web)" == X'NO' ]; then
+    PIP3_MODS="${PIP3_MODS} web.py>=0.61"
+else # Verify module version.
+    _webpy_ver=$(${CMD_PYTHON3} -c "import web; print(web.__version__)")
+    if echo ${_webpy_ver} | grep '^0\.[45]' &>/dev/null; then
+        PIP3_MODS="${PIP3_MODS} web.py>=0.61"
+    fi
+fi
+[ X"$(has_python_module jinja2)" == X'NO' ] && REQUIRED_PKGS="${REQUIRED_PKGS} ${PKG_PY_JINJA}"
 
-echo "  + [required] pycurl"
-[ X"$(has_python_module pycurl)" == X'NO' ] && install_pkg ${DEP_PY_CURL}
+if [ X"${REQUIRED_PKGS}" != X'' ]; then
+    install_pkg ${REQUIRED_PKGS}
+    if [ X"$?" != X'0' ]; then
+        echo "Package installation failed, please check console output and fix it manually."
+        exist 255
+    fi
+fi
 
-echo "  + [required] requests"
-[ X"$(has_python_module requests)" == X'NO' ] && install_pkg ${DEP_PY_REQUESTS}
-
+if [ X"${PIP3_MODS}" != X'' ]; then
+    ${CMD_PIP3} install -U ${PIP3_MODS}
+    if [ X"$?" != X'0' ]; then
+        echo "Package installation failed, please check console output and fix it manually."
+        exist 255
+    fi
+fi
 
 #------------------------------------------
 # Add new SQL tables, drop deprecated ones.
@@ -808,7 +875,7 @@ fi
 if ! grep 'iredadmin/tools/cleanup_db.py' ${CRON_FILE_ROOT} &>/dev/null; then
     cat >> ${CRON_FILE_ROOT} <<EOF
 # iRedAdmin: Clean up sql database.
-1   *   *   *   *   ${PYTHON_BIN} ${IRA_ROOT_DIR}/tools/cleanup_db.py &>/dev/null
+1   *   *   *   *   ${CMD_PYTHON3} ${IRA_ROOT_DIR}/tools/cleanup_db.py &>/dev/null
 EOF
 fi
 
@@ -816,9 +883,17 @@ fi
 if ! grep 'iredadmin/tools/delete_mailboxes.py' ${CRON_FILE_ROOT} &>/dev/null; then
     cat >> ${CRON_FILE_ROOT} <<EOF
 # iRedAdmin: Remove mailboxes which are scheduled to be removed.
-1   3   *   *   *   ${PYTHON_BIN} ${IRA_ROOT_DIR}/tools/delete_mailboxes.py
+1   3   *   *   *   ${CMD_PYTHON3} ${IRA_ROOT_DIR}/tools/delete_mailboxes.py
 EOF
 fi
+
+echo "* Replace py2 by py3 in cron jobs."
+perl -pi -e 's#(.*) python (.*/iredadmin/tools/.*)#${1} $ENV{CMD_PYTHON3} ${2}#' ${CRON_FILE_ROOT}
+perl -pi -e 's#(.*) python2 (.*/iredadmin/tools/.*)#${1} $ENV{CMD_PYTHON3} ${2}#' ${CRON_FILE_ROOT}
+perl -pi -e 's#(.*)/usr/bin/python (.*/iredadmin/tools/.*)#${1}$ENV{CMD_PYTHON3} ${2}#' ${CRON_FILE_ROOT}
+perl -pi -e 's#(.*)/usr/bin/python2 (.*/iredadmin/tools/.*)#${1}$ENV{CMD_PYTHON3} ${2}#' ${CRON_FILE_ROOT}
+perl -pi -e 's#(.*)/usr/local/bin/python (.*/iredadmin/tools/.*)#${1}$ENV{CMD_PYTHON3} ${2}#' ${CRON_FILE_ROOT}
+perl -pi -e 's#(.*)/usr/local/bin/python2 (.*/iredadmin/tools/.*)#${1}$ENV{CMD_PYTHON3} ${2}#' ${CRON_FILE_ROOT}
 
 echo "* Clean up."
 cd ${NEW_IRA_ROOT_DIR}/
@@ -829,6 +904,10 @@ if [[ -f ${NEW_IRA_ROOT_DIR}/libs/form_utils.py ]]; then
     find . -name '*.so' | xargs rm -f {}
     cd - &>/dev/null
 fi
+
+# Delete all sessions to force admins to re-login.
+cd ${NEW_IRA_ROOT_DIR}/tools/
+${CMD_PYTHON3} delete_sessions.py
 
 echo "* iRedAdmin has been successfully upgraded."
 restart_web_service

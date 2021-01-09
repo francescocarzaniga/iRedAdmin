@@ -4,11 +4,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  iRedAdmin-Pro\n"
+"Project-Id-Version:  iRedAdmin\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-11 00:44+0800\n"
+"POT-Creation-Date: 2020-10-05 15:15+0800\n"
 "PO-Revision-Date: 2011-06-10 23:46+0800\n"
-"Last-Translator: Olivier PLOIX <olivier.ploix@gmail.com>\n"
+"Last-Translator: Shafeek SUMSER <shafeeks@gmail.com>\n"
 "Language: fr_FR\n"
 "Language-Team: fr_FR <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
@@ -18,61 +18,36 @@ msgstr ""
 "Generated-By: Babel 2.3.4\n"
 
 #, python-format
-msgid "%s (%s)"
-msgstr "%s (%s)"
-
-#, python-format
 msgid "%s days, %s hours, %s minutes."
 msgstr "%s jours, %s heures, %s minutes."
 
-msgid "1 day"
-msgstr ""
-
-msgid "1 year"
-msgstr ""
-
-msgid "2 years"
-msgstr ""
-
-msgid "3 months"
-msgstr ""
-
-msgid "3 years"
-msgstr ""
-
-msgid "6 months"
+#, python-format
+msgid "(%d messages, %s.)"
 msgstr ""
 
 #, python-format
-msgid "<a href='%s'>Domain and sub-domain users</a>"
-msgstr "<a href='%s'>Utilisateurs du domaine et du sous-domaine"
+msgid "(%d%% full, %d messages, %s.)"
+msgstr ""
 
-#, python-format
-msgid "<a href='%s'>Domain users</a>"
-msgstr "<a href='%s'>Utilisateurs du domaine</a>"
+msgid "(Mailbox is empty.)"
+msgstr ""
 
-#, python-format
-msgid "<a href='%s'>Members</a>"
-msgstr "<a href='%s'>Membres</a>"
-
-#, python-format
-msgid "<a href='%s'>Members</a> and <a href='%s'>moderators</a>"
-msgstr "<a href='%s'>Membres</a> et <a href='%s'>modérateurs</a>"
-
-#, python-format
-msgid "<a href='%s'>Moderators</a>"
-msgstr "<a href='%s'>Modérateurs</a>"
-
-msgid "Account already exists, please choose another username."
+msgid "Account already exists, please choose another one."
 msgstr "Le compte existe déjà, merci de choisir un autre nom d'utilisateur."
 
-msgid "Account is active."
-msgstr "Compte actif."
+msgid "Account does not exist."
+msgstr "Le compte n'existe pas."
 
 msgid "Account is disabled."
 msgstr "Compte désactivé."
 
+msgid "Account is global admin"
+msgstr "Le compte est un administrateur global."
+
 msgid "Activate account"
+msgstr "Compte actif"
+
+msgid "Activities"
 msgstr ""
 
 msgid "Add"
@@ -87,15 +62,17 @@ msgstr "Ajouter un administrateur"
 msgid "Add domain"
 msgstr "Ajouter un domaine"
 
+msgid "Add mail user"
+msgstr "Ajouter une liste de diffusion"
+
+msgid "Add mail user under domain"
+msgstr "Ajouter un utilisateur au domaine : %s."
+
 msgid "Add one"
 msgstr "Ajouter un"
 
 msgid "Add one more?"
 msgstr "ajouter un de plus?"
-
-#, python-format
-msgid "Add user under domain: %s"
-msgstr "Ajouter un utilisateur au domaine : %s."
 
 msgid "Admin"
 msgstr "Administrateur"
@@ -104,19 +81,23 @@ msgid "Admin Log"
 msgstr "Log Administrateurs"
 
 msgid "Admin created."
-msgstr ""
+msgstr "Compte administrateur créé."
 
 msgid "Admin login"
-msgstr "Login administrateur"
-
-msgid "Admin not exist."
-msgstr "L'administrateur n'existe pas."
+msgstr "Authentification de l'administrateur"
 
 msgid "Admins"
 msgstr "Administrateurs"
 
-msgid "Alias account"
-msgstr "Alias de compte"
+#, python-format
+msgid "Admins under domain: %s"
+msgstr "Utilisateurs du domaine : %s"
+
+msgid "Advanced"
+msgstr "Avancé"
+
+msgid "Alias domains:"
+msgstr ""
 
 msgid "All admins"
 msgstr "Tous les administrateurs"
@@ -124,46 +105,69 @@ msgstr "Tous les administrateurs"
 msgid "All domains"
 msgstr "Tous les domaines"
 
+msgid ""
+"All domains managed by this admin share the mailbox quota and limit of "
+"mail accounts."
+msgstr ""
+
 msgid "All domains under your control."
 msgstr "Tous les domaines sous votre contrôle."
 
-msgid "All mail administrators."
-msgstr "Tous les administrateurs de messagerie."
-
 msgid "Allocated"
 msgstr "Alloué"
+
+msgid "Already reaches account limit (mail aliases)."
+msgstr ""
+
+msgid "Already reaches account limit (mail domains)."
+msgstr ""
+
+msgid "Already reaches account limit (mail users)."
+msgstr ""
+
+msgid "Already reaches account limit (mailbox quota)."
+msgstr ""
+
+msgid "Already reaches account limit (mailing lists)."
+msgstr ""
 
 msgid "Apply"
 msgstr "Appliquer"
 
 #, python-format
-msgid "At least %s characters, but no more than %s."
-msgstr "Au moins %s caractères, mais sans dépasser %s."
+msgid "At least %d characters."
+msgstr ""
 
 #, python-format
 msgid "At least %s characters."
 msgstr "Au moins %s caractères."
 
+msgid "At least one digit number"
+msgstr ""
+
+msgid "At least one letter"
+msgstr ""
+
+msgid "At least one special character:"
+msgstr ""
+
+msgid "At least one uppercase letter"
+msgstr ""
+
 msgid "Available quota:"
-msgstr "Quota disponible :"
-
-msgid "BCC incoming emails to single address"
-msgstr "Mails BCC entrant à une seule adresse"
-
-msgid "BCC incoming mails to other address"
-msgstr "Mails BCC entrant à une autre adresse"
-
-msgid "BCC outgoing emails to single address"
-msgstr "Mails BCC sortant à une seule adresse"
-
-msgid "BCC outgoing mails to other address"
-msgstr "Mails BCC sortant à une autre adresse"
+msgstr "Limite quota disponible :"
 
 msgid "Backup"
 msgstr ""
 
-msgid "Check this box in order to enable other services"
-msgstr "Cocher cette case pour activer les autres services liés à la messagerie."
+msgid "Backup MX"
+msgstr ""
+
+msgid "Can not be longer than"
+msgstr ""
+
+msgid "Can not be shorter than"
+msgstr ""
 
 msgid "Choose Action"
 msgstr "Choisir une action"
@@ -177,14 +181,11 @@ msgstr "Confirmer le nouveau mot de passe"
 msgid "Contact webmaster"
 msgstr "Contacter le webmaster"
 
+msgid "Content of disclaimer will be appended to outgoing emails."
+msgstr ""
+
 msgid "Current password is incorrect."
 msgstr "Le mot de passe actuel est incorrect."
-
-msgid "Customize mail filter rule"
-msgstr "Personnaliser les règles de filtrage des messages"
-
-msgid "Customize mail filter rule over TLS/SSL"
-msgstr "Personnaliser les règles de filtrage des messages sur TLS/SSL"
 
 msgid "DISABLED"
 msgstr "Inactif"
@@ -192,7 +193,7 @@ msgstr "Inactif"
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
-msgid "Default quota of new user"
+msgid "Default language for new user"
 msgstr "Quota par défaut pour un nouvel utilisateur"
 
 msgid "Delete"
@@ -207,26 +208,29 @@ msgstr "Tout effacer dans la base de données"
 msgid "Delete mailboxes"
 msgstr ""
 
-msgid "Delete mailboxes in"
+msgid "Delete selected log"
 msgstr ""
-
-msgid "Delete selected"
-msgstr "Supprimer la sélection"
 
 msgid "Disable"
 msgstr "Inactif"
 
 msgid "Disable account"
-msgstr "Inactiver le compte"
+msgstr "Désactiver le compte"
+
+msgid "Disabled"
+msgstr "Désactivé"
+
+msgid "Disabled accounts"
+msgstr "Désactiver le compte"
+
+msgid "Disabled domains"
+msgstr "Editer le profil du domaine"
+
+msgid "Disclaimer"
+msgstr ""
 
 msgid "Display Name"
 msgstr "Nom Affiché"
-
-msgid "Display mail address in global LDAP address book"
-msgstr "Afficher l'adresse mail dans le carnet d'adresses global LDAP"
-
-msgid "Displayed in Global LDAP Address Book"
-msgstr "Afficher l'adresse de messagerie dans le carnet d'adresses global LDAP"
 
 msgid "Domain"
 msgstr "Domaine"
@@ -237,15 +241,24 @@ msgstr "Administrateurs du Domaine"
 msgid "Domain Name"
 msgstr "Nom de Domaine"
 
-msgid "Domain alias"
-msgstr "Alias de domaine"
-
 msgid "Domain already exists. Please check both primary or alias domains."
 msgstr ""
-"Le compte existe déjà. Merci vérifier à la fois le domaine principal ou "
-"l'alias."
+"Le domaine existe déjà.  Veuillez vérifier à la fois les domaines "
+"principaux ou alias\"\n"
+"\"Le compte existe déjà. Merci vérifier à la fois le domaine principal ou"
+" \"\n"
+"\"l'alias."
 
 msgid "Domain created."
+msgstr "Domaine créé"
+
+msgid "Domain is active, but marked as backup MX."
+msgstr ""
+
+msgid "Domain is active, but relay to other host"
+msgstr ""
+
+msgid "Domain is disabled."
 msgstr ""
 
 msgid "Domain name is empty."
@@ -254,18 +267,21 @@ msgstr "Le nom de domaine est vide."
 msgid "Domain name or username is missed."
 msgstr "Le nom de domaine ou d'utilisateur est manquant."
 
-msgid "Domain quota size"
-msgstr "Taille du quota pour le domaine"
-
 msgid ""
 "Domain quota size exceeded. Please contact your administrator or service "
 "provider to increase it."
 msgstr ""
-"Le quota de taille du domaine est dépassé. Merci de contacter "
-"l'administrateur pour l'augmenter."
+"La taille du quota du domaine est dépassé. Veuillez contacter votre "
+"administrateur ou fournisseur de service pour l'augmenter."
+
+msgid "Domains"
+msgstr "Domaines"
 
 msgid "Domains and Accounts"
 msgstr "Domaines et comptes"
+
+msgid "Dump disclaimer automatically"
+msgstr ""
 
 msgid "Edit account profile"
 msgstr "Editer le profil du compte"
@@ -273,11 +289,17 @@ msgstr "Editer le profil du compte"
 msgid "Edit domain profile"
 msgstr "Editer le profil du domaine"
 
-msgid "Empty address is not allowed."
-msgstr "Une adresse vide n'est pas autorisée."
+msgid "Edit quota setting"
+msgstr "Editer le paramètre de quota"
+
+msgid "Email address was changed."
+msgstr "Une adresse de courriel par ligne."
+
+msgid "Emails"
+msgstr "Courriels"
 
 msgid "Empty password is not allowed."
-msgstr "Mot de passe vide non autorisé."
+msgstr "Mot de passe vide n'est pas autorisé."
 
 msgid "Enable"
 msgstr "Actif"
@@ -288,12 +310,11 @@ msgstr "Activer ce compte"
 msgid "Enable this domain"
 msgstr "Activer ce domaine"
 
-msgid "Enabled Services"
-msgstr "Services activés"
+msgid "Error"
+msgstr ""
 
-#, python-format
-msgid "Error while checking new version: %s"
-msgstr "Erreur lors de la vérification de la nouvelle version : %s"
+msgid "Error while checking new version of iRedAdmin:"
+msgstr ""
 
 msgid "Error:"
 msgstr "Erreur :"
@@ -301,24 +322,21 @@ msgstr "Erreur :"
 msgid "Events"
 msgstr "Evénements"
 
+msgid "Everyone can send mail to this address"
+msgstr "Tout le monde peut envoyer des messages à cette adresse"
+
 msgid ""
 "Exceeded domain account limit. Please contact your administrator or "
 "service provider to increase it."
 msgstr ""
-"Le quota de taille du domaine est dépassé. Merci de contacter "
-"l'administrateur pour l'augmenter."
+"Le taille de quota du domaine est dépassée. Veuillez contacter votre "
+"administrateur ou votre founisseur de service pour l'augmenter."
 
-msgid "Fetching mails via IMAP"
-msgstr "Récupérer les messages via IMAP"
+msgid "Filter accounts by first character in email addresses"
+msgstr ""
 
-msgid "Fetching mails via IMAP over TLS/SSL"
-msgstr "Récupérer les messages via IMAPS. (IMAP over TLS/SSL)"
-
-msgid "Fetching mails via POP3"
-msgstr "Récupérer les messages via POP3."
-
-msgid "Fetching mails via POP3 over TLS/SSL"
-msgstr "Récupérer les messages via POP3S. (POP3 over TLS/SSL)"
+msgid "Filter domains by first character in mail domain name"
+msgstr ""
 
 msgid "Filter:"
 msgstr "Filtre :"
@@ -329,11 +347,8 @@ msgstr "Première page"
 msgid "First name"
 msgstr "Première page"
 
-msgid "Forwarding mails to other addresses"
-msgstr "Transférer des mails à d'autres adresses"
-
 msgid "Full name"
-msgstr ""
+msgstr "Nom complet"
 
 msgid "General"
 msgstr "Général"
@@ -341,51 +356,65 @@ msgstr "Général"
 msgid "Global Admin"
 msgstr "Administrateur Global"
 
-msgid "Global admin"
-msgstr "Administrateur Global"
-
 msgid "Grant admin"
-msgstr ""
+msgstr "Administrateurs du Domaine"
 
 msgid "Hostname"
 msgstr "Nom d'hôte"
 
+msgid "IMAP Login:"
+msgstr ""
+
 msgid "IP Address"
 msgstr "Adresse IP"
 
-msgid "Invalid action."
+msgid "Invalid account."
 msgstr "Action invalide."
 
-msgid "Invalid domain name or mail address."
-msgstr "Domaine ou adresse mail invalide."
+msgid "Invalid action."
+msgstr "Action invalide."
 
 msgid "Invalid domain name."
 msgstr "Nom de domaine invalide."
 
 msgid "Invalid mail address."
-msgstr "L'adresse mail invalide."
-
-msgid "Invalid request data."
-msgstr "Requête invalide."
-
-msgid "Invalid username."
-msgstr "Utilisateur invalide."
+msgstr "L'adresse de courriel invalide."
 
 msgid "Is a global admin."
 msgstr "Est administrateur global."
 
-msgid ""
-"It is recommended to mark user as domain admin in user profile page "
-"instead of creating separate admin account."
-msgstr ""
-
 msgid "Job Title"
 msgstr "Titre"
 
-msgid "Job Title/Responsibility"
-msgstr "Titre / Fonction"
+#, python-format
+msgid "Keep mailbox for %d days"
+msgstr ""
 
-msgid "Keep forever"
+#, python-format
+msgid "Keep mailbox for %d months"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d weeks"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d years"
+msgstr ""
+
+msgid "Keep mailbox for 1 day"
+msgstr ""
+
+msgid "Keep mailbox for 1 month "
+msgstr ""
+
+msgid "Keep mailbox for 1 week"
+msgstr ""
+
+msgid "Keep mailbox for 1 year"
+msgstr ""
+
+msgid "Keep mailbox forever"
 msgstr ""
 
 msgid "Last Page"
@@ -394,8 +423,11 @@ msgstr "Dernière page"
 msgid "Last name"
 msgstr "Nom d'hôte"
 
+msgid "Leave it empty to use server-wide default setting."
+msgstr ""
+
 msgid "List all mail users."
-msgstr "Lister tous les utilisateurs."
+msgstr "Lister tous les comptes de messagerie."
 
 #, python-format
 msgid "Logged in as %s"
@@ -404,77 +436,75 @@ msgstr "Connecté en tant que %s"
 msgid "Login"
 msgstr "Connexion"
 
+msgid "Login from your IP address is not allowed."
+msgstr ""
+
 msgid "Login required"
-msgstr "Identifiant requis"
+msgstr "Authentification requise"
 
 msgid "Login to manage your mail domains & accounts"
-msgstr "Connectez-vous pour gérer vos domaines et comptes mail"
+msgstr "Connectez-vous pour gérer vos domaines et comptes pour les courriels"
 
 msgid "Logout"
 msgstr "Déconnexion"
 
 msgid "Mail Address"
-msgstr "Adresse mail"
+msgstr "Adresse de messagerie"
 
 msgid "Mail Users"
-msgstr "Utilisateurs mail"
-
-msgid "Mail address already exists, please choose another one."
-msgstr "L'adresse mail existe déjà, merci de choisir une autre."
-
-msgid "Mail alias created."
-msgstr ""
-
-msgid "Mail list created."
-msgstr ""
-
-msgid "Mail service"
-msgstr "Service de messagerie"
+msgstr "Utilisateurs de messagerie"
 
 msgid "Mailbox Quota"
-msgstr "Quota de boite mail"
+msgstr "Quota de boite aux lettres"
 
-msgid "Mails were deleted."
-msgstr "Les mails ont été supprimés."
+msgid "Make sure disclaimer work as expected:"
+msgstr ""
 
-msgid "Mails were released."
-msgstr "Les mails ont été délivrés."
-
-msgid "Managed Domains"
-msgstr "Domaines gérés"
+msgid "Mark as domain admin"
+msgstr "Marquer comme administrateur du domaine"
 
 msgid "Mark as global admin"
 msgstr "Marquer comme administrateur global"
 
-msgid "Mark this user as"
+msgid "Mark this user as global admin"
 msgstr ""
 
-msgid "Member assigned success."
-msgstr "Membre affecté avec succès."
+msgid "Maximum password length"
+msgstr ""
 
-msgid "Member removed success."
-msgstr "Membre supprimé avec succès."
+msgid "Member of mailing lists:"
+msgstr ""
+
+msgid "Members"
+msgstr "Membres"
+
+msgid "Members and moderators"
+msgstr ""
 
 msgid "Message"
 msgstr "Message"
 
+msgid "Minimum password length"
+msgstr ""
+
 msgid "Mobile"
 msgstr "Mobile"
 
-msgid "Moderators assigned success."
-msgstr "Modérateurs assignés avec succès."
+msgid "Moderators"
+msgstr "Modérateurs"
 
-msgid "Moderators removed success."
-msgstr "Modérateurs supprimés avec succès."
+#, python-format
+msgid "Must be %s - %s characters."
+msgstr ""
 
-msgid "Name"
-msgstr "Nom"
-
-msgid "Need a random password?"
-msgstr "Mot de passe aléatoire ?"
+msgid "Need a strong password?"
+msgstr ""
 
 msgid "Network"
 msgstr "Réseau"
+
+msgid "New Mail Delivered:"
+msgstr ""
 
 msgid "New password"
 msgstr "Nouveau mot de passe"
@@ -485,13 +515,17 @@ msgstr "Le nouveau mot de passe ne doit pas contenir plus de %s caractères."
 
 #, python-format
 msgid "New password must contain at least %s characters."
-msgstr "Le nouveau mot de passe doit contenir au m oins %s caractères."
+msgstr "Le nouveau mot de passe doit contenir au moins %s caractères."
 
 msgid "New passwords are not match."
-msgstr "Echec de confirmation du nouveau mot de passe."
+msgstr "Les nouveaux mot de passe ne correspondent pas."
 
-msgid "News & Announments"
-msgstr "News & annonces"
+#, python-format
+msgid ""
+"New version of iRedAdmin, %s, is now available for upgrading. <a "
+"href='https://docs.iredmail.org/migrate.or.upgrade.iredadmin.html' "
+"class='button green'>Upgrade tutorial</a>."
+msgstr ""
 
 msgid "Next Page"
 msgstr "Page suivante"
@@ -500,47 +534,71 @@ msgid "No account selected."
 msgstr "Pas de compte sélectionné."
 
 msgid "No admin log."
-msgstr "Login administrateur"
+msgstr "Pas d'évennement de l'administrateur"
+
+msgid "No digit number in password."
+msgstr ""
 
 msgid "No domain under control."
-msgstr "Aucun domaine contrôlé."
+msgstr "Aucun domaine est contrôlé."
+
+msgid "No letter in password."
+msgstr ""
+
+msgid "No mail admin assigned."
+msgstr ""
 
 msgid "No mail domain available."
-msgstr "Pas de domaine disponible."
+msgstr "Pas de courriel du domaine disponible."
 
 msgid "No mail user available."
-msgstr "Pas d'utilisateur disponible."
+msgstr "Pas de courriel d'utilisateur disponible."
 
-msgid "No moderator selected."
-msgstr "Aucun modérateur sélectionné."
+#, python-format
+msgid "No more than %d characters."
+msgstr ""
 
 #, python-format
 msgid "No more than %s characters."
 msgstr "Pas plus de %s caractères."
 
-msgid "No such domain."
-msgstr "Aucun domaine correspondant."
+msgid "No special character in password."
+msgstr ""
+
+msgid "No uppercase letter in password."
+msgstr ""
 
 msgid "Not a global admin."
 msgstr "Pas un administrateur global."
 
-msgid "Not allowed to create mail alias under this domain."
-msgstr "Vous ne pouvez créer plus d'alias mail dans le domaine %s."
-
-msgid "Not allowed to create mail list under this domain."
-msgstr "Vous ne pouvez créer d'autres mailing listes pour le domaine %s."
-
 msgid "Not allowed to create mail user under this domain."
-msgstr "Vous ne pouvez pas créer plus de compte pour le domaine %s."
+msgstr "Vous ne pouvez pas créer de compte courriel pour ce domaine %s."
+
+msgid "Note: Global admin can manage all mail domains."
+msgstr ""
+
+msgid "Number of domains"
+msgstr "Nombre de domaines"
+
+msgid "Number of users"
+msgstr "Nombre maximum d'utilisateurs"
 
 msgid "Old password"
 msgstr "Ancien mot de passe"
 
-msgid "Operation completed."
-msgstr "Opération terminée."
+msgid ""
+"One IP address or network per line. Invalid address or network will be "
+"discarded."
+msgstr ""
+
+msgid "One mail address per line. Invalid address will be discarded."
+msgstr ""
 
 msgid "Or create other mail accounts:"
-msgstr "Ou créer d'autres comptes mail :"
+msgstr "Ou créer d'autres comptes de messageries :"
+
+msgid "POP3 Login:"
+msgstr ""
 
 msgid "Password"
 msgstr "Mot de passe"
@@ -554,24 +612,26 @@ msgstr "Le mot de passe est trop long."
 msgid "Password is too short."
 msgstr "Le mot de passe est trop court."
 
-msgid "Password of cn=vmailadmin is incorrect."
-msgstr "Le mot de passe actuel est incorrect."
-
-msgid ""
-"Per-user relay setting will override per-domain relay setting you set in "
-"this page."
+msgid "Password last change:"
 msgstr ""
-"Le relais par utilisateur écrasera le relais par domaine que vous avez "
-"défini dans cette page."
+
+msgid "Password must contain"
+msgstr "Le nouveau mot de passe doit contenir au moins %s caractères."
 
 msgid "Permission denied."
-msgstr "Autorisation refusée."
+msgstr "Permission non-authorisée."
+
+msgid "Plain text only"
+msgstr ""
+
+msgid "Please do not use non-ascii character in password."
+msgstr ""
 
 msgid "Please select at least one account."
-msgstr "Merci de sélectionner au moins un domaine auquel appliquer l'action."
+msgstr "Veuillez sélectionner au moins un compte."
 
-msgid "Please select at least one domain to apply action."
-msgstr "Merci de sélectionner au moins un domaine auquel appliquer l'action."
+msgid "Please select at least one domain."
+msgstr "Veuillez sélectionner au moins un compte."
 
 msgid "Preferences"
 msgstr "Préférences"
@@ -581,6 +641,9 @@ msgstr "Langue préférée"
 
 msgid "Previous Page"
 msgstr "Page précédente"
+
+msgid "Profile has been updated."
+msgstr ""
 
 msgid "Profile of admin:"
 msgstr "Profil de l'administrateur."
@@ -592,45 +655,29 @@ msgid "Profile of user:"
 msgstr "Profil de l'utilisateur :"
 
 msgid "Profile updated failed."
-msgstr "La mise à jour du profil a échoué."
-
-msgid "Profile updated success."
-msgstr "Profil mise à jour avec succès."
-
-msgid "Quarantined Mails"
-msgstr "Mails en quarantaine"
+msgstr "La mise à jour du profil a échouée."
 
 msgid "Quota"
 msgstr "Quota"
 
-msgid "Received Mails"
-msgstr "Mails reçus"
-
-msgid "Receiving mails for this account on mail server"
-msgstr "Recevoir les mails pour ce compte sur le serveur mail"
-
-msgid "Relay/Transport Setting"
-msgstr "Paramètres de relais/transport"
-
-msgid "Remember me"
-msgstr "Se souvenir de moi"
-
-msgid "Revoke admin privilege"
+msgid "Records were successfully updated."
 msgstr ""
 
-msgid "Sample"
-msgstr "Exemple"
+msgid "Relay"
+msgstr "Relais"
+
+msgid "Revoke admin privilege"
+msgstr "Profil de l'administrateur."
 
 msgid "Save changes"
 msgstr "Sauvegarder les modifications"
-
-msgid "Search keyword could not be empty."
-msgstr "La rechercher de mot clé ne doit pas être vide."
 
 msgid ""
 "Security token did not match. Please refresh current page and re-perform "
 "form action."
 msgstr ""
+"Le jeton de sécurité ne correspond pas.  Veuillez rafraîchir la page "
+"actuelle et ré-exécuter l'action du formulaire. "
 
 msgid "Selected accounts were deleted."
 msgstr "Les comptes sélectionnés ont été supprimés."
@@ -641,8 +688,26 @@ msgstr "Les comptes sélectionnés ont été désactivés."
 msgid "Selected accounts were enabled."
 msgstr "Les comptes sélectionnés ont été activés."
 
-msgid "Selected domains were deleted."
-msgstr "Les domaines sélectionnés ont été supprimés."
+msgid "Selected accounts were marked as domain admin."
+msgstr ""
+"Les comptes sélectionnés ont été marqués comme l'administrateur du "
+"domaine."
+
+msgid "Selected accounts were marked as global admin."
+msgstr "Les comptes sélectionnés ont été marqués comme l'administrateur global."
+
+msgid "Selected accounts were unmarked as domain admin."
+msgstr ""
+"Les comptes sélectionnés ne sont plus marqués comme l'administrateur du "
+"domaine."
+
+msgid "Selected accounts were unmarked as global admin."
+msgstr ""
+"Les comptes sélectionnés ne sont plus marqués comme l'administrateur "
+"global."
+
+msgid "Selected domains have been deleted."
+msgstr ""
 
 msgid "Selected domains were disabled."
 msgstr "Les domaines sélectionnés ont été désactivés."
@@ -651,19 +716,10 @@ msgid "Selected domains were enabled."
 msgstr "Les domaines sélectionnés ont été activés."
 
 msgid "Selected log records were deleted."
-msgstr "Les logs sélectionnés ont été supprimés."
-
-msgid "Sending mails via SMTP"
-msgstr "Envoyer les messages via SMTP"
-
-msgid "Sending mails via SMTP over TLS/SSL"
-msgstr "Récupérer les messages via POP3S. (POP3 over TLS/SSL)"
-
-msgid "Sent Mails"
-msgstr "Mails envoyés"
+msgstr "Les registres d'évennements sélectionnés ont été supprimés."
 
 msgid "Server Load"
-msgstr "Charge du serveur"
+msgstr "La charge du serveur"
 
 msgid ""
 "Server-side size limit exceeded. Please increase \"sizelimit\" in your "
@@ -673,13 +729,26 @@ msgstr ""
 "l'annuaire LDAP."
 
 msgid "Session expired, please re-login."
-msgstr "La session a expérié, merci de vous identifier à nouveau."
+msgstr "La session a été expiré, merci de vous identifier à nouveau."
 
 msgid "Set to 0 for unlimited."
-msgstr "Définir à 0 pour illimité."
+msgstr "Définir la valeur 0 pour illimité."
+
+#, python-format
+msgid "Some addresses have been discarded because they have been used: %s."
+msgstr ""
+
+msgid "Standalone admin account cannot be an user of local domain."
+msgstr ""
 
 msgid "Store password in plain text"
-msgstr ""
+msgstr "Garder le mot de passe en texte brute"
+
+msgid "Stored"
+msgstr "Stocké"
+
+msgid "Stored emails"
+msgstr "Courriels stockés"
 
 msgid "Submit"
 msgstr "Envoyer"
@@ -690,11 +759,8 @@ msgstr "Le nom de domaine soumis est incorrect."
 msgid "Support"
 msgstr "Support"
 
-msgid "System"
-msgstr "Système"
-
 msgid "System Information"
-msgstr "Informations Système"
+msgstr "Informations du Système"
 
 msgid "Telephone Number"
 msgstr "Numéro de téléphone"
@@ -702,45 +768,56 @@ msgstr "Numéro de téléphone"
 msgid "Time"
 msgstr "Temps"
 
-msgid "Total"
-msgstr "Total"
+msgid "Time zone"
+msgstr ""
+
+msgid "Unban IP address"
+msgstr ""
 
 msgid "Unlimited"
 msgstr "Illimité"
 
-msgid "Unrestricted"
-msgstr "Non restreinte"
+msgid "Unmark as domain admin"
+msgstr "Ne pas marquer comme administrateur du domaine."
 
-#, python-format
-msgid "Update available: <a href='%s' target='_blank'>v%s</a>"
-msgstr "Mise à jour disponibles : <a href='%s' target='_blank'>v%s</a>."
+msgid "Unmark as global admin"
+msgstr "Ne pas marquer comme administrateur global"
+
+msgid "Unrestricted"
+msgstr "Sans restriction"
 
 msgid "Update whitelists and blacklists"
-msgstr ""
+msgstr "Ajouter à la liste blanche"
 
 msgid "Uptime"
-msgstr "A jour"
+msgstr "Disponibilité"
+
+msgid "Use this password"
+msgstr ""
+
+msgid "Used"
+msgstr "Utilisé"
 
 msgid "User"
 msgstr "Utilisateur"
 
-msgid "User ID"
-msgstr "ID Utilisateur"
-
 msgid "User created."
-msgstr ""
+msgstr "Utilisateur créé"
 
 msgid "User login (self-service)"
 msgstr ""
+
+msgid "User/Employee ID"
+msgstr "L'ID de l'utilisateur/employé"
 
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
 msgid "Username must be an valid email address."
-msgstr "L'identifiant doit être une adresse mail valide."
+msgstr "Le nom d'utilisateur doit être une adresse de courriel valide."
 
 msgid "Username or password is incorrect."
-msgstr "L'identifiant ou le mot de passe est incorrect"
+msgstr "Le nom d'utilisateur ou le mot de passe est incorrect"
 
 msgid "Users"
 msgstr "Utilisateurs"
@@ -749,9 +826,21 @@ msgstr "Utilisateurs"
 msgid "Users under domain: %s"
 msgstr "Utilisateurs du domaine : %s"
 
-msgid "Warning"
-msgstr "Attention"
+msgid "Users under same domain"
+msgstr ""
 
-msgid "iRedMail Admin Panel"
-msgstr "Panneau d'administration iRedMail"
+msgid "Users under same domain and its sub-domains"
+msgstr ""
+
+msgid "Who can send email to this list"
+msgstr "Qui peuvent envoyer des courriels à cette liste"
+
+msgid "You are not allowed to update global domain admin's profile."
+msgstr ""
+
+msgid "or longer than"
+msgstr ""
+
+msgid "without verifying local recipients"
+msgstr ""
 

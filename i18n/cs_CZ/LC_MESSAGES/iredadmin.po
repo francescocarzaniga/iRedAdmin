@@ -1,14 +1,14 @@
-# Czech (Czech) translations for iRedAdmin-Pro.
+# Czech (Czech) translations for iRedAdmin.
 # Copyright (C) 2012 RPUDIL
 # This file is distributed under the same license as the  project.
 # FIRST AUTHOR <info@webhosting.fm>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  iRedAdmin-Pro\n"
+"Project-Id-Version:  iRedAdmin\n"
 "Report-Msgid-Bugs-To: zhb@iredmail.org\n"
-"POT-Creation-Date: 2018-02-11 00:44+0800\n"
-"PO-Revision-Date: 2012-10-23 19:05+0100\n"
+"POT-Creation-Date: 2020-10-05 15:15+0800\n"
+"PO-Revision-Date: 2013-03-14 21:23+0100\n"
 "Last-Translator: \n"
 "Language: cs_CZ\n"
 "Language-Team: cs_CZ <info@webhosting.fm>\n"
@@ -19,61 +19,36 @@ msgstr ""
 "Generated-By: Babel 2.3.4\n"
 
 #, python-format
-msgid "%s (%s)"
-msgstr "%s (%s)"
-
-#, python-format
 msgid "%s days, %s hours, %s minutes."
 msgstr "%s dní, %s hodin, %s minut."
 
-msgid "1 day"
-msgstr ""
-
-msgid "1 year"
-msgstr ""
-
-msgid "2 years"
-msgstr ""
-
-msgid "3 months"
-msgstr ""
-
-msgid "3 years"
-msgstr ""
-
-msgid "6 months"
+#, python-format
+msgid "(%d messages, %s.)"
 msgstr ""
 
 #, python-format
-msgid "<a href='%s'>Domain and sub-domain users</a>"
-msgstr "<a href='%s'>Uživatelé domény a subdomén</a>"
+msgid "(%d%% full, %d messages, %s.)"
+msgstr ""
 
-#, python-format
-msgid "<a href='%s'>Domain users</a>"
-msgstr "<a href='%s'>Uživatelé domény</a>"
+msgid "(Mailbox is empty.)"
+msgstr ""
 
-#, python-format
-msgid "<a href='%s'>Members</a>"
-msgstr "<a href='%s'>Členové</a>"
-
-#, python-format
-msgid "<a href='%s'>Members</a> and <a href='%s'>moderators</a>"
-msgstr "<a href='%s'>Členové</a> a <a href='%s'>moderátoři</a>"
-
-#, python-format
-msgid "<a href='%s'>Moderators</a>"
-msgstr "<a href='%s'>Moderátoři</a>"
-
-msgid "Account already exists, please choose another username."
+msgid "Account already exists, please choose another one."
 msgstr "Účet již existuje, zvolte jiné jméno."
 
-msgid "Account is active."
-msgstr "Účet je aktivní"
+msgid "Account does not exist."
+msgstr "Účet neexistuje."
 
 msgid "Account is disabled."
 msgstr "Účet je zakázán"
 
+msgid "Account is global admin"
+msgstr "Není globální správce."
+
 msgid "Activate account"
+msgstr "Aktivovat účet"
+
+msgid "Activities"
 msgstr ""
 
 msgid "Add"
@@ -88,15 +63,17 @@ msgstr "Přidat správce"
 msgid "Add domain"
 msgstr "Přidat doménu"
 
+msgid "Add mail user"
+msgstr "Přidat maillist"
+
+msgid "Add mail user under domain"
+msgstr "Přidat uživatele v doméně %s"
+
 msgid "Add one"
 msgstr "Přidat"
 
 msgid "Add one more?"
 msgstr "Přidat další?"
-
-#, python-format
-msgid "Add user under domain: %s"
-msgstr "Přidat uživatele v doméně %s"
 
 msgid "Admin"
 msgstr "Správce"
@@ -110,14 +87,18 @@ msgstr "Správce vytvořen."
 msgid "Admin login"
 msgstr "Přihlášení správce"
 
-msgid "Admin not exist."
-msgstr "Správce neexistuje."
-
 msgid "Admins"
 msgstr "Správci"
 
-msgid "Alias account"
-msgstr "Alias účet"
+#, python-format
+msgid "Admins under domain: %s"
+msgstr "Uživatelé v doméně %s"
+
+msgid "Advanced"
+msgstr "Rozšířené"
+
+msgid "Alias domains:"
+msgstr ""
 
 msgid "All admins"
 msgstr "Všichni správci"
@@ -125,46 +106,69 @@ msgstr "Všichni správci"
 msgid "All domains"
 msgstr "Všechny domény"
 
+msgid ""
+"All domains managed by this admin share the mailbox quota and limit of "
+"mail accounts."
+msgstr ""
+
 msgid "All domains under your control."
 msgstr "Seznam spravovaných domén"
-
-msgid "All mail administrators."
-msgstr "Všichni správci pošty"
 
 msgid "Allocated"
 msgstr "Přiděleno"
 
+msgid "Already reaches account limit (mail aliases)."
+msgstr ""
+
+msgid "Already reaches account limit (mail domains)."
+msgstr ""
+
+msgid "Already reaches account limit (mail users)."
+msgstr ""
+
+msgid "Already reaches account limit (mailbox quota)."
+msgstr ""
+
+msgid "Already reaches account limit (mailing lists)."
+msgstr ""
+
 msgid "Apply"
-msgstr "Uložit"
+msgstr "Provést"
 
 #, python-format
-msgid "At least %s characters, but no more than %s."
-msgstr "Nejméně %s znaků, ale ne více než %s znaků."
+msgid "At least %d characters."
+msgstr ""
 
 #, python-format
 msgid "At least %s characters."
 msgstr "Nejméně %s znaků."
 
+msgid "At least one digit number"
+msgstr ""
+
+msgid "At least one letter"
+msgstr ""
+
+msgid "At least one special character:"
+msgstr ""
+
+msgid "At least one uppercase letter"
+msgstr ""
+
 msgid "Available quota:"
 msgstr "Dostupný prostor:"
-
-msgid "BCC incoming emails to single address"
-msgstr "Přichozí emaily na BCC adresu"
-
-msgid "BCC incoming mails to other address"
-msgstr "Přichozí emaily na jinou BCC adresu"
-
-msgid "BCC outgoing emails to single address"
-msgstr "Odchozí emaily na BCC adresu"
-
-msgid "BCC outgoing mails to other address"
-msgstr "Odchozí emaily na jinou BCC adresu"
 
 msgid "Backup"
 msgstr ""
 
-msgid "Check this box in order to enable other services"
-msgstr "Zaškrtněte toto políčko, abyste povolili další emailové služby."
+msgid "Backup MX"
+msgstr ""
+
+msgid "Can not be longer than"
+msgstr ""
+
+msgid "Can not be shorter than"
+msgstr ""
 
 msgid "Choose Action"
 msgstr "Vyberte akci"
@@ -178,14 +182,11 @@ msgstr "Potvrďte nové heslo"
 msgid "Contact webmaster"
 msgstr "Kontaktujte správce"
 
+msgid "Content of disclaimer will be appended to outgoing emails."
+msgstr ""
+
 msgid "Current password is incorrect."
 msgstr "Aktuální heslo je nesprávné."
-
-msgid "Customize mail filter rule"
-msgstr "Změnit pravidlo pro filtrování pošty"
-
-msgid "Customize mail filter rule over TLS/SSL"
-msgstr "Změnit pravidlo pro filtrování pošty přes TLS/SSL"
 
 msgid "DISABLED"
 msgstr "ZAKÁZÁNO"
@@ -193,7 +194,7 @@ msgstr "ZAKÁZÁNO"
 msgid "Dashboard"
 msgstr "Pracovní plocha"
 
-msgid "Default quota of new user"
+msgid "Default language for new user"
 msgstr "Výchozí prostor nového uživatele"
 
 msgid "Delete"
@@ -208,11 +209,8 @@ msgstr "Smazat vše v databázi"
 msgid "Delete mailboxes"
 msgstr ""
 
-msgid "Delete mailboxes in"
+msgid "Delete selected log"
 msgstr ""
-
-msgid "Delete selected"
-msgstr "Smazat vybrané"
 
 msgid "Disable"
 msgstr "Zakázat"
@@ -220,14 +218,20 @@ msgstr "Zakázat"
 msgid "Disable account"
 msgstr "Zakázat účet"
 
+msgid "Disabled"
+msgstr "Zakázán"
+
+msgid "Disabled accounts"
+msgstr "Zakázat účet"
+
+msgid "Disabled domains"
+msgstr "Upravit profil domény"
+
+msgid "Disclaimer"
+msgstr ""
+
 msgid "Display Name"
 msgstr "Název"
-
-msgid "Display mail address in global LDAP address book"
-msgstr "Zobrazovat emailovou adresu v globálním LDAP adresáři"
-
-msgid "Displayed in Global LDAP Address Book"
-msgstr "Zobrazeno v globálním LDAP adresáři"
 
 msgid "Domain"
 msgstr "Doména"
@@ -238,9 +242,6 @@ msgstr "Správci domény"
 msgid "Domain Name"
 msgstr "Doména"
 
-msgid "Domain alias"
-msgstr "Alias domény"
-
 msgid "Domain already exists. Please check both primary or alias domains."
 msgstr ""
 "Doména již existuje. Zkontrolujte jména existujících domén i jejich "
@@ -249,14 +250,20 @@ msgstr ""
 msgid "Domain created."
 msgstr "Doména vytvořena."
 
+msgid "Domain is active, but marked as backup MX."
+msgstr ""
+
+msgid "Domain is active, but relay to other host"
+msgstr ""
+
+msgid "Domain is disabled."
+msgstr ""
+
 msgid "Domain name is empty."
 msgstr "Jméno domény je prázdné."
 
 msgid "Domain name or username is missed."
 msgstr "Chybí jméno domény nebo uživatelské jméno."
-
-msgid "Domain quota size"
-msgstr "Velikost prostoru pro emaily"
 
 msgid ""
 "Domain quota size exceeded. Please contact your administrator or service "
@@ -265,8 +272,14 @@ msgstr ""
 "Velikost doménového prostoru byla překročena. Kontaktujte Vašeho správce "
 "nebo poskytovatele služeb pro zvětšení prostoru."
 
+msgid "Domains"
+msgstr "Domény"
+
 msgid "Domains and Accounts"
 msgstr "Domény a účty"
+
+msgid "Dump disclaimer automatically"
+msgstr ""
 
 msgid "Edit account profile"
 msgstr "Upravit profil účtu"
@@ -274,8 +287,14 @@ msgstr "Upravit profil účtu"
 msgid "Edit domain profile"
 msgstr "Upravit profil domény"
 
-msgid "Empty address is not allowed."
-msgstr "Prázdná adresa není povolena."
+msgid "Edit quota setting"
+msgstr "Upravit nastavení kvóty"
+
+msgid "Email address was changed."
+msgstr "Jedna emailová adresa na řádek."
+
+msgid "Emails"
+msgstr "emailů"
 
 msgid "Empty password is not allowed."
 msgstr "Prázdné heslo není povoleno."
@@ -289,18 +308,20 @@ msgstr "Povolit tento účet"
 msgid "Enable this domain"
 msgstr "Povolit tuto doménu"
 
-msgid "Enabled Services"
-msgstr "Povolené služby"
+msgid "Error"
+msgstr ""
 
-#, python-format
-msgid "Error while checking new version: %s"
-msgstr "Chyba při zjišťování nové verze iRedAdmin-Pro:"
+msgid "Error while checking new version of iRedAdmin:"
+msgstr ""
 
 msgid "Error:"
 msgstr "Chyba:"
 
 msgid "Events"
 msgstr "Události"
+
+msgid "Everyone can send mail to this address"
+msgstr "Kdokoliv může na tuto adresu poslat email"
 
 msgid ""
 "Exceeded domain account limit. Please contact your administrator or "
@@ -309,17 +330,11 @@ msgstr ""
 "Překročen počet účtů v doméně. Kontaktujte Vašeho správce nebo "
 "poskytovatele služeb pro zvýšení počtu účtů."
 
-msgid "Fetching mails via IMAP"
-msgstr "Přijímání pošty pomocí IMAP"
+msgid "Filter accounts by first character in email addresses"
+msgstr ""
 
-msgid "Fetching mails via IMAP over TLS/SSL"
-msgstr "Přijímání pošty pomocí IMAP přes TLS/SSL"
-
-msgid "Fetching mails via POP3"
-msgstr "Přijímání pošty pomocí POP3"
-
-msgid "Fetching mails via POP3 over TLS/SSL"
-msgstr "Přijímání pošty pomocí POP3 přes TLS/SSL"
+msgid "Filter domains by first character in mail domain name"
+msgstr ""
 
 msgid "Filter:"
 msgstr "Filtr:"
@@ -328,13 +343,10 @@ msgid "First Page"
 msgstr "První strana"
 
 msgid "First name"
-msgstr "První strana"
-
-msgid "Forwarding mails to other addresses"
-msgstr "Přesměrovat emaily na jiné adresy"
+msgstr "Křestní jméno"
 
 msgid "Full name"
-msgstr ""
+msgstr "Jméno a příjmení"
 
 msgid "General"
 msgstr "Obecné"
@@ -342,23 +354,23 @@ msgstr "Obecné"
 msgid "Global Admin"
 msgstr "Globální správce"
 
-msgid "Global admin"
-msgstr "Globální správce"
-
 msgid "Grant admin"
-msgstr ""
+msgstr "Správci domény"
 
 msgid "Hostname"
 msgstr "Jméno hosta"
 
+msgid "IMAP Login:"
+msgstr ""
+
 msgid "IP Address"
 msgstr "IP adresa"
 
-msgid "Invalid action."
+msgid "Invalid account."
 msgstr "Neplatná operace."
 
-msgid "Invalid domain name or mail address."
-msgstr "Neplatné jméno domény nebo emailové adresy."
+msgid "Invalid action."
+msgstr "Neplatná operace."
 
 msgid "Invalid domain name."
 msgstr "Neplatné jméno domény."
@@ -366,36 +378,51 @@ msgstr "Neplatné jméno domény."
 msgid "Invalid mail address."
 msgstr "Neplatná emailová adresa."
 
-msgid "Invalid request data."
-msgstr "Neplatná data požadavku."
-
-msgid "Invalid username."
-msgstr "Neplatné jméno uživatele."
-
 msgid "Is a global admin."
 msgstr "Je globální správce."
-
-msgid ""
-"It is recommended to mark user as domain admin in user profile page "
-"instead of creating separate admin account."
-msgstr ""
-"Doporučujeme označit uživatele jako správce domény v jeho uživatelkém "
-"profilu namísto vytváření zvláštního účtu správce."
 
 msgid "Job Title"
 msgstr "Funkce"
 
-msgid "Job Title/Responsibility"
-msgstr "Funkce/Odpovědnost"
+#, python-format
+msgid "Keep mailbox for %d days"
+msgstr ""
 
-msgid "Keep forever"
+#, python-format
+msgid "Keep mailbox for %d months"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d weeks"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d years"
+msgstr ""
+
+msgid "Keep mailbox for 1 day"
+msgstr ""
+
+msgid "Keep mailbox for 1 month "
+msgstr ""
+
+msgid "Keep mailbox for 1 week"
+msgstr ""
+
+msgid "Keep mailbox for 1 year"
+msgstr ""
+
+msgid "Keep mailbox forever"
 msgstr ""
 
 msgid "Last Page"
 msgstr "Poslední strana"
 
 msgid "Last name"
-msgstr "Jméno hosta"
+msgstr "Příjmení"
+
+msgid "Leave it empty to use server-wide default setting."
+msgstr ""
 
 msgid "List all mail users."
 msgstr "Zobrazit všechny uživatele"
@@ -406,6 +433,9 @@ msgstr "Přihlášený jako %s"
 
 msgid "Login"
 msgstr "Přihlásit se"
+
+msgid "Login from your IP address is not allowed."
+msgstr ""
 
 msgid "Login required"
 msgstr "Vyžadováno přihlášení"
@@ -422,62 +452,57 @@ msgstr "Email"
 msgid "Mail Users"
 msgstr "Uživatelé pošty"
 
-msgid "Mail address already exists, please choose another one."
-msgstr "Emailová adresa již existuje, zvolte jinou adresu."
-
-msgid "Mail alias created."
-msgstr "Alias emailu vytvořen."
-
-msgid "Mail list created."
-msgstr "Maillist vytvořen."
-
-msgid "Mail service"
-msgstr "Služba pošty"
-
 msgid "Mailbox Quota"
 msgstr "Prostor schránky"
 
-msgid "Mails were deleted."
-msgstr "Emaily byly smazány."
+msgid "Make sure disclaimer work as expected:"
+msgstr ""
 
-msgid "Mails were released."
-msgstr "Emaily byly uvolněny."
-
-msgid "Managed Domains"
-msgstr "Spravované domény"
+msgid "Mark as domain admin"
+msgstr "Označit jako správce domény"
 
 msgid "Mark as global admin"
 msgstr "Označit jako globálního správce"
 
-msgid "Mark this user as"
-msgstr "Označit uživatele jako"
+msgid "Mark this user as global admin"
+msgstr ""
 
-msgid "Member assigned success."
-msgstr "Člen byl úspěšně vložen."
+msgid "Maximum password length"
+msgstr ""
 
-msgid "Member removed success."
-msgstr "Člen byl úspěšně odebrán."
+msgid "Member of mailing lists:"
+msgstr ""
+
+msgid "Members"
+msgstr "Členové"
+
+msgid "Members and moderators"
+msgstr ""
 
 msgid "Message"
 msgstr "Zpráva"
 
+msgid "Minimum password length"
+msgstr ""
+
 msgid "Mobile"
 msgstr "Mobil"
 
-msgid "Moderators assigned success."
-msgstr "Moderátoři byli úspěšně vloženi."
+msgid "Moderators"
+msgstr "Moderátoři"
 
-msgid "Moderators removed success."
-msgstr "Moderátoři byli úspěšně odebráni."
+#, python-format
+msgid "Must be %s - %s characters."
+msgstr ""
 
-msgid "Name"
-msgstr "Název firmy"
-
-msgid "Need a random password?"
-msgstr "Potřebujete náhodné heslo?"
+msgid "Need a strong password?"
+msgstr ""
 
 msgid "Network"
 msgstr "Síť"
+
+msgid "New Mail Delivered:"
+msgstr ""
 
 msgid "New password"
 msgstr "Nové heslo"
@@ -493,8 +518,12 @@ msgstr "Nové heslo musí být nejméně %s znaků dlouhé."
 msgid "New passwords are not match."
 msgstr "Nová hesla si neodpovídají."
 
-msgid "News & Announments"
-msgstr "Novinky a oznámení"
+#, python-format
+msgid ""
+"New version of iRedAdmin, %s, is now available for upgrading. <a "
+"href='https://docs.iredmail.org/migrate.or.upgrade.iredadmin.html' "
+"class='button green'>Upgrade tutorial</a>."
+msgstr ""
 
 msgid "Next Page"
 msgstr "Další strana"
@@ -505,8 +534,17 @@ msgstr "Není vybrán žádný účet."
 msgid "No admin log."
 msgstr "Neexistuje žádný log správce."
 
+msgid "No digit number in password."
+msgstr ""
+
 msgid "No domain under control."
 msgstr "Žádná doména ke správě."
+
+msgid "No letter in password."
+msgstr ""
+
+msgid "No mail admin assigned."
+msgstr ""
 
 msgid "No mail domain available."
 msgstr "Žádná doména."
@@ -514,36 +552,51 @@ msgstr "Žádná doména."
 msgid "No mail user available."
 msgstr "Žádný uživatel."
 
-msgid "No moderator selected."
-msgstr "Není vybraný moderátor."
+#, python-format
+msgid "No more than %d characters."
+msgstr ""
 
 #, python-format
 msgid "No more than %s characters."
 msgstr "Ne více než %s znaků."
 
-msgid "No such domain."
-msgstr "Doména nenalezena."
+msgid "No special character in password."
+msgstr ""
+
+msgid "No uppercase letter in password."
+msgstr ""
 
 msgid "Not a global admin."
 msgstr "Není globální správce."
 
-msgid "Not allowed to create mail alias under this domain."
-msgstr "V této doméně není povoleno vytvářet aliasy."
-
-msgid "Not allowed to create mail list under this domain."
-msgstr "V této doméně není povoleno vytvářet maillisty."
-
 msgid "Not allowed to create mail user under this domain."
 msgstr "V této doméně není povoleno vytvářet uživatele."
+
+msgid "Note: Global admin can manage all mail domains."
+msgstr ""
+
+msgid "Number of domains"
+msgstr "Počet domén"
+
+msgid "Number of users"
+msgstr "Počet uživatelů"
 
 msgid "Old password"
 msgstr "Staré heslo"
 
-msgid "Operation completed."
-msgstr "Operace dokončena."
+msgid ""
+"One IP address or network per line. Invalid address or network will be "
+"discarded."
+msgstr ""
+
+msgid "One mail address per line. Invalid address will be discarded."
+msgstr ""
 
 msgid "Or create other mail accounts:"
 msgstr "Nebo vytvořte další emailové účty:"
+
+msgid "POP3 Login:"
+msgstr ""
 
 msgid "Password"
 msgstr "Heslo"
@@ -557,24 +610,26 @@ msgstr "Heslo je příliš dlouhé."
 msgid "Password is too short."
 msgstr "Heslo je příliš krátké."
 
-msgid "Password of cn=vmailadmin is incorrect."
-msgstr "Heslo pro cn=vmailadmin není správné."
-
-msgid ""
-"Per-user relay setting will override per-domain relay setting you set in "
-"this page."
+msgid "Password last change:"
 msgstr ""
-"Uživatelské nastavení přeposílání zneplatní doménové nastavení "
-"přeposílání."
+
+msgid "Password must contain"
+msgstr "Nové heslo musí být nejméně %s znaků dlouhé."
 
 msgid "Permission denied."
 msgstr "Přístup odepřen."
 
+msgid "Plain text only"
+msgstr ""
+
+msgid "Please do not use non-ascii character in password."
+msgstr ""
+
 msgid "Please select at least one account."
 msgstr "Vyberte alespoň jeden účet."
 
-msgid "Please select at least one domain to apply action."
-msgstr "Vyberte alespoň jednu doménu pro zpracování."
+msgid "Please select at least one domain."
+msgstr "Vyberte alespoň jeden účet."
 
 msgid "Preferences"
 msgstr "Nastavení"
@@ -584,6 +639,9 @@ msgstr "Preferovaný jazyk"
 
 msgid "Previous Page"
 msgstr "Předchozí strana"
+
+msgid "Profile has been updated."
+msgstr ""
 
 msgid "Profile of admin:"
 msgstr "Profil správce"
@@ -597,38 +655,20 @@ msgstr "Profil uživatele"
 msgid "Profile updated failed."
 msgstr "Aktualizace profilu se nepodařila."
 
-msgid "Profile updated success."
-msgstr "Změna profilu uložena."
-
-msgid "Quarantined Mails"
-msgstr "Emaily v karanténě"
-
 msgid "Quota"
 msgstr "Prostor"
 
-msgid "Received Mails"
-msgstr "Přijaté emaily"
-
-msgid "Receiving mails for this account on mail server"
-msgstr "Přijaté emaily pro tento účet na poštovním serveru"
-
-msgid "Relay/Transport Setting"
-msgstr "Nastavení přeposílání (relaying)"
-
-msgid "Remember me"
-msgstr "Zapamatovat si mě na tomto počítači"
-
-msgid "Revoke admin privilege"
+msgid "Records were successfully updated."
 msgstr ""
 
-msgid "Sample"
-msgstr "Příklad"
+msgid "Relay"
+msgstr "Přeposílání"
+
+msgid "Revoke admin privilege"
+msgstr "Profil správce"
 
 msgid "Save changes"
 msgstr "Uložit změny"
-
-msgid "Search keyword could not be empty."
-msgstr "Slovo pro vyhledávání nesmí být prázdné."
 
 msgid ""
 "Security token did not match. Please refresh current page and re-perform "
@@ -644,8 +684,20 @@ msgstr "Vybrané účty byly nastaveny jako neaktivní."
 msgid "Selected accounts were enabled."
 msgstr "Vybrané účty byly nastaveny jako aktivní."
 
-msgid "Selected domains were deleted."
-msgstr "Vybrané domény byly smazány."
+msgid "Selected accounts were marked as domain admin."
+msgstr "Vybrané účty byly nastaveny jako aktivní."
+
+msgid "Selected accounts were marked as global admin."
+msgstr "Vybrané účty byly nastaveny jako aktivní."
+
+msgid "Selected accounts were unmarked as domain admin."
+msgstr "Vybrané účty byly nastaveny jako aktivní."
+
+msgid "Selected accounts were unmarked as global admin."
+msgstr "Vybrané účty byly nastaveny jako aktivní."
+
+msgid "Selected domains have been deleted."
+msgstr ""
 
 msgid "Selected domains were disabled."
 msgstr "Vybrané domény byly nastaveny jako neaktivní."
@@ -655,15 +707,6 @@ msgstr "Vybrané domény byly nastaveny jako aktivní."
 
 msgid "Selected log records were deleted."
 msgstr "Vybrané auditní záznamy byly smazány."
-
-msgid "Sending mails via SMTP"
-msgstr "Odesílání pošty pomocí SMTP"
-
-msgid "Sending mails via SMTP over TLS/SSL"
-msgstr "Odesílání pošty pomocí SMTP přes TLS/SSL"
-
-msgid "Sent Mails"
-msgstr "Odeslané emaily"
 
 msgid "Server Load"
 msgstr "Zátěž serveru"
@@ -681,8 +724,21 @@ msgstr "Session vypršela, znovu se přihlašte."
 msgid "Set to 0 for unlimited."
 msgstr "Pro neomezeně nastavte hodnotu 0."
 
+#, python-format
+msgid "Some addresses have been discarded because they have been used: %s."
+msgstr ""
+
+msgid "Standalone admin account cannot be an user of local domain."
+msgstr ""
+
 msgid "Store password in plain text"
 msgstr "Uložit heslo jako běžný řetězec"
+
+msgid "Stored"
+msgstr "Obsazeno"
+
+msgid "Stored emails"
+msgstr "Uložené emaily"
 
 msgid "Submit"
 msgstr "Odeslat"
@@ -693,9 +749,6 @@ msgstr "Jméno domény není správné."
 msgid "Support"
 msgstr "Podpora"
 
-msgid "System"
-msgstr "Systém"
-
 msgid "System Information"
 msgstr "Informace o systému"
 
@@ -705,38 +758,47 @@ msgstr "Telefonní číslo"
 msgid "Time"
 msgstr "Čas"
 
-msgid "Total"
-msgstr "Celkem"
+msgid "Time zone"
+msgstr ""
+
+msgid "Unban IP address"
+msgstr ""
 
 msgid "Unlimited"
 msgstr "Bez omezení"
 
+msgid "Unmark as domain admin"
+msgstr "Označit jako správce domény"
+
+msgid "Unmark as global admin"
+msgstr "Označit jako globálního správce"
+
 msgid "Unrestricted"
 msgstr "Bez omezení"
 
-#, python-format
-msgid "Update available: <a href='%s' target='_blank'>v%s</a>"
-msgstr ""
-"Záznamy byly přidány. <a href=\"%s\" target=\"_blank\">Zobrazit "
-"záznamy</a>"
-
 msgid "Update whitelists and blacklists"
-msgstr ""
+msgstr "Přidat whitelist"
 
 msgid "Uptime"
 msgstr "Čas běhu"
 
+msgid "Use this password"
+msgstr ""
+
+msgid "Used"
+msgstr "Využito"
+
 msgid "User"
 msgstr "Uživatel"
-
-msgid "User ID"
-msgstr "ID uživatele"
 
 msgid "User created."
 msgstr "Uživatel vytvořen."
 
 msgid "User login (self-service)"
 msgstr ""
+
+msgid "User/Employee ID"
+msgstr "ID uživatele"
 
 msgid "Username"
 msgstr "Uživatel"
@@ -754,9 +816,21 @@ msgstr "Uživatelé"
 msgid "Users under domain: %s"
 msgstr "Uživatelé v doméně %s"
 
-msgid "Warning"
-msgstr "Upozornění"
+msgid "Users under same domain"
+msgstr ""
 
-msgid "iRedMail Admin Panel"
-msgstr "Administrátorský panel iRedAdmin"
+msgid "Users under same domain and its sub-domains"
+msgstr ""
+
+msgid "Who can send email to this list"
+msgstr "Kdo může poslat email na tento alias"
+
+msgid "You are not allowed to update global domain admin's profile."
+msgstr ""
+
+msgid "or longer than"
+msgstr ""
+
+msgid "without verifying local recipients"
+msgstr ""
 

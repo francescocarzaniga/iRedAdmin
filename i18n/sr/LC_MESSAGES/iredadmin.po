@@ -1,0 +1,836 @@
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: zhb@iredmail.org\n"
+"POT-Creation-Date: 2020-10-05 15:15+0800\n"
+"PO-Revision-Date: 2013-03-14 21:34+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sr\n"
+"Language-Team: sr_CS <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#, python-format
+msgid "%s days, %s hours, %s minutes."
+msgstr "%s dana, %s sati, %s minuta."
+
+#, python-format
+msgid "(%d messages, %s.)"
+msgstr ""
+
+#, python-format
+msgid "(%d%% full, %d messages, %s.)"
+msgstr ""
+
+msgid "(Mailbox is empty.)"
+msgstr ""
+
+msgid "Account already exists, please choose another one."
+msgstr "Nalog već postoji, molim izaberite drugo korisničko ime."
+
+msgid "Account does not exist."
+msgstr "Nalog ne postoji."
+
+msgid "Account is disabled."
+msgstr "Nalog je blokiran."
+
+msgid "Account is global admin"
+msgstr "Nalog je globalni administrator"
+
+msgid "Activate account"
+msgstr "Aktivan nalog"
+
+msgid "Activities"
+msgstr ""
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "Add account"
+msgstr "Dodaj nalog"
+
+msgid "Add admin"
+msgstr "Dodaj administratora"
+
+msgid "Add domain"
+msgstr "Dodaj domen"
+
+msgid "Add mail user"
+msgstr "Dodaj poštansku listu"
+
+msgid "Add mail user under domain"
+msgstr "Dodaj korisnika unutar domena: %s"
+
+msgid "Add one"
+msgstr "Dodaj jednog"
+
+msgid "Add one more?"
+msgstr "Dodaj još?"
+
+msgid "Admin"
+msgstr "Administrator"
+
+msgid "Admin Log"
+msgstr "Administratorski dnevnik"
+
+msgid "Admin created."
+msgstr "Administrator napravljen."
+
+msgid "Admin login"
+msgstr "Administratorska prijava"
+
+msgid "Admins"
+msgstr "Administratori"
+
+#, python-format
+msgid "Admins under domain: %s"
+msgstr "Administratori unutar domena: %s"
+
+msgid "Advanced"
+msgstr "Napredno"
+
+msgid "Alias domains:"
+msgstr ""
+
+msgid "All admins"
+msgstr "Svi administratori"
+
+msgid "All domains"
+msgstr "Svi domeni"
+
+msgid ""
+"All domains managed by this admin share the mailbox quota and limit of "
+"mail accounts."
+msgstr ""
+
+msgid "All domains under your control."
+msgstr "Svi domeni pod tvojim upravljanjem."
+
+msgid "Allocated"
+msgstr "Dodeljen"
+
+msgid "Already reaches account limit (mail aliases)."
+msgstr ""
+
+msgid "Already reaches account limit (mail domains)."
+msgstr ""
+
+msgid "Already reaches account limit (mail users)."
+msgstr ""
+
+msgid "Already reaches account limit (mailbox quota)."
+msgstr ""
+
+msgid "Already reaches account limit (mailing lists)."
+msgstr ""
+
+msgid "Apply"
+msgstr "Primeni"
+
+#, python-format
+msgid "At least %d characters."
+msgstr ""
+
+#, python-format
+msgid "At least %s characters."
+msgstr "Najmanje %s karaktera."
+
+msgid "At least one digit number"
+msgstr ""
+
+msgid "At least one letter"
+msgstr ""
+
+msgid "At least one special character:"
+msgstr ""
+
+msgid "At least one uppercase letter"
+msgstr ""
+
+msgid "Available quota:"
+msgstr "Kvota na raspolaganju:"
+
+msgid "Backup"
+msgstr ""
+
+msgid "Backup MX"
+msgstr ""
+
+msgid "Can not be longer than"
+msgstr ""
+
+msgid "Can not be shorter than"
+msgstr ""
+
+msgid "Choose Action"
+msgstr "Izaberi akciju"
+
+msgid "Company/Organization Name"
+msgstr "Kompanija/Ime organizacije"
+
+msgid "Confirm new password"
+msgstr "Potvrdi novu lozinku"
+
+msgid "Contact webmaster"
+msgstr "Kontaktiraj webmastera"
+
+msgid "Content of disclaimer will be appended to outgoing emails."
+msgstr ""
+
+msgid "Current password is incorrect."
+msgstr "Trenutna lozinka je neispravna."
+
+msgid "DISABLED"
+msgstr "ONESPOSOBLJEN"
+
+msgid "Dashboard"
+msgstr "Komandna tabla"
+
+msgid "Default language for new user"
+msgstr "Uobičajna kvota novog korisnika"
+
+msgid "Delete"
+msgstr "Obriši"
+
+msgid "Delete account"
+msgstr "Obriši nalog"
+
+msgid "Delete all in database"
+msgstr "Obriši sve iz baze"
+
+msgid "Delete mailboxes"
+msgstr ""
+
+msgid "Delete selected log"
+msgstr ""
+
+msgid "Disable"
+msgstr "Onesposobi"
+
+msgid "Disable account"
+msgstr "Onesposobi nalog"
+
+msgid "Disabled"
+msgstr "Onesposobljen"
+
+msgid "Disabled accounts"
+msgstr "Onesposobi nalog"
+
+msgid "Disabled domains"
+msgstr "Uređivanje provila domena"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Display Name"
+msgstr "Prikaži ime"
+
+msgid "Domain"
+msgstr "Domen"
+
+msgid "Domain Admins"
+msgstr "Administratori domena"
+
+msgid "Domain Name"
+msgstr "Ime domena"
+
+msgid "Domain already exists. Please check both primary or alias domains."
+msgstr "Domen već postoji. Molimo vas da proverite primarni i-ili alia"
+
+msgid "Domain created."
+msgstr "Domen napravljen."
+
+msgid "Domain is active, but marked as backup MX."
+msgstr ""
+
+msgid "Domain is active, but relay to other host"
+msgstr ""
+
+msgid "Domain is disabled."
+msgstr ""
+
+msgid "Domain name is empty."
+msgstr "Ime domena je prazno."
+
+msgid "Domain name or username is missed."
+msgstr "Ime domena ili korisničko ime je propušteno."
+
+msgid ""
+"Domain quota size exceeded. Please contact your administrator or service "
+"provider to increase it."
+msgstr ""
+"Veličina kvote domena je premašena, obratite se administratoru ili "
+"provajderu usluga da ih poveća."
+
+msgid "Domains"
+msgstr "Domeni"
+
+msgid "Domains and Accounts"
+msgstr "Domeni i nalozi"
+
+msgid "Dump disclaimer automatically"
+msgstr ""
+
+msgid "Edit account profile"
+msgstr "Uređivanje profila naloga"
+
+msgid "Edit domain profile"
+msgstr "Uređivanje provila domena"
+
+msgid "Edit quota setting"
+msgstr "Uređivanje kvota podešavanja"
+
+msgid "Email address was changed."
+msgstr "Jedna e-pošta po liniji."
+
+msgid "Emails"
+msgstr "E-pošte"
+
+msgid "Empty password is not allowed."
+msgstr "Prazana lozinka nije dozvoljena."
+
+msgid "Enable"
+msgstr "Omogući"
+
+msgid "Enable this account"
+msgstr "Omogući ovaj nalog"
+
+msgid "Enable this domain"
+msgstr "Omogući ovaj domen"
+
+msgid "Error"
+msgstr ""
+
+msgid "Error while checking new version of iRedAdmin:"
+msgstr ""
+
+msgid "Error:"
+msgstr "Greška:"
+
+msgid "Events"
+msgstr "Događaji"
+
+msgid "Everyone can send mail to this address"
+msgstr "Svako može da šalje poštu na ovu adresu"
+
+msgid ""
+"Exceeded domain account limit. Please contact your administrator or "
+"service provider to increase it."
+msgstr ""
+"Prekoračen limit naloga domena, obratite se administratoru ili operateru "
+"usluga da ga poveća."
+
+msgid "Filter accounts by first character in email addresses"
+msgstr ""
+
+msgid "Filter domains by first character in mail domain name"
+msgstr ""
+
+msgid "Filter:"
+msgstr "Filter:"
+
+msgid "First Page"
+msgstr "Prva strana"
+
+msgid "First name"
+msgstr "Ime"
+
+msgid "Full name"
+msgstr "Puno ime"
+
+msgid "General"
+msgstr "Opšti"
+
+msgid "Global Admin"
+msgstr "Global Admin"
+
+msgid "Grant admin"
+msgstr "Administrator domena"
+
+msgid "Hostname"
+msgstr "Ime hosta"
+
+msgid "IMAP Login:"
+msgstr ""
+
+msgid "IP Address"
+msgstr "IP adresa"
+
+msgid "Invalid account."
+msgstr "Nevažeća akcija."
+
+msgid "Invalid action."
+msgstr "Nevažeća akcija."
+
+msgid "Invalid domain name."
+msgstr "Nevažeće ime domena."
+
+msgid "Invalid mail address."
+msgstr "Nevažeća adresa e-pošte."
+
+msgid "Is a global admin."
+msgstr "Je globalni administrator."
+
+msgid "Job Title"
+msgstr "Naslov posla"
+
+#, python-format
+msgid "Keep mailbox for %d days"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d months"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d weeks"
+msgstr ""
+
+#, python-format
+msgid "Keep mailbox for %d years"
+msgstr ""
+
+msgid "Keep mailbox for 1 day"
+msgstr ""
+
+msgid "Keep mailbox for 1 month "
+msgstr ""
+
+msgid "Keep mailbox for 1 week"
+msgstr ""
+
+msgid "Keep mailbox for 1 year"
+msgstr ""
+
+msgid "Keep mailbox forever"
+msgstr ""
+
+msgid "Last Page"
+msgstr "Poslednja strana"
+
+msgid "Last name"
+msgstr "Prezime"
+
+msgid "Leave it empty to use server-wide default setting."
+msgstr ""
+
+msgid "List all mail users."
+msgstr "Lista svih poštanskih koriniska."
+
+#, python-format
+msgid "Logged in as %s"
+msgstr "Prijaveljen kao %s"
+
+msgid "Login"
+msgstr "Prijava"
+
+msgid "Login from your IP address is not allowed."
+msgstr ""
+
+msgid "Login required"
+msgstr "Potreba je prijava"
+
+msgid "Login to manage your mail domains & accounts"
+msgstr "Prijavite se da upravljate svojim mail domenima i nalozima"
+
+msgid "Logout"
+msgstr "Odjava"
+
+msgid "Mail Address"
+msgstr "E-pošta adrese"
+
+msgid "Mail Users"
+msgstr "E-pošta korisnici"
+
+msgid "Mailbox Quota"
+msgstr "Kvota poštanskog sandučeta"
+
+msgid "Make sure disclaimer work as expected:"
+msgstr ""
+
+msgid "Mark as domain admin"
+msgstr "Obeleži kao domen admin"
+
+msgid "Mark as global admin"
+msgstr "Obeleži kao globalni admin"
+
+msgid "Mark this user as global admin"
+msgstr ""
+
+msgid "Maximum password length"
+msgstr ""
+
+msgid "Member of mailing lists:"
+msgstr ""
+
+msgid "Members"
+msgstr "Članovi"
+
+msgid "Members and moderators"
+msgstr ""
+
+msgid "Message"
+msgstr "Poruka"
+
+msgid "Minimum password length"
+msgstr ""
+
+msgid "Mobile"
+msgstr "Mobilni"
+
+msgid "Moderators"
+msgstr "Urednici"
+
+#, python-format
+msgid "Must be %s - %s characters."
+msgstr ""
+
+msgid "Need a strong password?"
+msgstr ""
+
+msgid "Network"
+msgstr "Mreža"
+
+msgid "New Mail Delivered:"
+msgstr ""
+
+msgid "New password"
+msgstr "Nova lozinka"
+
+#, python-format
+msgid "New password must NOT contain more than %s characters."
+msgstr "Nova lozinka NE sme da sadrži više od %s karaktera."
+
+#, python-format
+msgid "New password must contain at least %s characters."
+msgstr "Nova lozinka treba da sadrži barem %s karaktera."
+
+msgid "New passwords are not match."
+msgstr "Nove lozinke nisu iste."
+
+#, python-format
+msgid ""
+"New version of iRedAdmin, %s, is now available for upgrading. <a "
+"href='https://docs.iredmail.org/migrate.or.upgrade.iredadmin.html' "
+"class='button green'>Upgrade tutorial</a>."
+msgstr ""
+
+msgid "Next Page"
+msgstr "Sledeća strana"
+
+msgid "No account selected."
+msgstr "Nalog nije izabran."
+
+msgid "No admin log."
+msgstr "Nema admin dnevnika."
+
+msgid "No digit number in password."
+msgstr ""
+
+msgid "No domain under control."
+msgstr "Nema domena pod kontrolom."
+
+msgid "No letter in password."
+msgstr ""
+
+msgid "No mail admin assigned."
+msgstr ""
+
+msgid "No mail domain available."
+msgstr "Domen pošte nije dostupan."
+
+msgid "No mail user available."
+msgstr "Korisnik pošte nije dostupan."
+
+#, python-format
+msgid "No more than %d characters."
+msgstr ""
+
+#, python-format
+msgid "No more than %s characters."
+msgstr "Ne više od %s karaktera."
+
+msgid "No special character in password."
+msgstr ""
+
+msgid "No uppercase letter in password."
+msgstr ""
+
+msgid "Not a global admin."
+msgstr "Nije globalni admin."
+
+msgid "Not allowed to create mail user under this domain."
+msgstr "Nije dozvoljeno pravljenje novog korisnika e-pošte pod ovim domenom."
+
+msgid "Note: Global admin can manage all mail domains."
+msgstr ""
+
+msgid "Number of domains"
+msgstr "Broj domena"
+
+msgid "Number of users"
+msgstr "Broj korinsika"
+
+msgid "Old password"
+msgstr "Stara lozinka"
+
+msgid ""
+"One IP address or network per line. Invalid address or network will be "
+"discarded."
+msgstr ""
+
+msgid "One mail address per line. Invalid address will be discarded."
+msgstr ""
+
+msgid "Or create other mail accounts:"
+msgstr "Ili napravi drugi nalog e-pošte:"
+
+msgid "POP3 Login:"
+msgstr ""
+
+msgid "Password"
+msgstr "Lozinka"
+
+msgid "Password is empty."
+msgstr "Lozinka je prazna."
+
+msgid "Password is too long."
+msgstr "Lozinka je previše dugačka. "
+
+msgid "Password is too short."
+msgstr "Lozinka je previše kratka."
+
+msgid "Password last change:"
+msgstr ""
+
+msgid "Password must contain"
+msgstr "Nova lozinka treba da sadrži barem %s karaktera."
+
+msgid "Permission denied."
+msgstr "Dozvola je odbijena."
+
+msgid "Plain text only"
+msgstr ""
+
+msgid "Please do not use non-ascii character in password."
+msgstr ""
+
+msgid "Please select at least one account."
+msgstr "Molim vas izaberite barem jedan nalog."
+
+msgid "Please select at least one domain."
+msgstr "Molim vas izaberite barem jedan nalog."
+
+msgid "Preferences"
+msgstr "Postavke"
+
+msgid "Preferred language"
+msgstr "Željeni jezik"
+
+msgid "Previous Page"
+msgstr "Prethodna strana"
+
+msgid "Profile has been updated."
+msgstr ""
+
+msgid "Profile of admin:"
+msgstr "Profile administratora:"
+
+msgid "Profile of domain:"
+msgstr "Profil domena:"
+
+msgid "Profile of user:"
+msgstr "Korisnički profil:"
+
+msgid "Profile updated failed."
+msgstr "Ažuriranje profila nije uspelo."
+
+msgid "Quota"
+msgstr "Kvota"
+
+msgid "Records were successfully updated."
+msgstr ""
+
+msgid "Relay"
+msgstr "Prenesi"
+
+msgid "Revoke admin privilege"
+msgstr "Profile administratora:"
+
+msgid "Save changes"
+msgstr "Snimi promene"
+
+msgid ""
+"Security token did not match. Please refresh current page and re-perform "
+"form action."
+msgstr ""
+"Bezbednost tokena ne odgovara. Osvežite trenutnu stranicu i ponovo izvrši"
+" oblik akcija."
+
+msgid "Selected accounts were deleted."
+msgstr "Izabrani nalozi su obrisani."
+
+msgid "Selected accounts were disabled."
+msgstr "Izabrani nalozi su onesposobljeni."
+
+msgid "Selected accounts were enabled."
+msgstr "Izabrani nalozi su omogućeni."
+
+msgid "Selected accounts were marked as domain admin."
+msgstr "Izabrani nalozi su obeleženi kao domen admini."
+
+msgid "Selected accounts were marked as global admin."
+msgstr "Izabrani nalozi su obeleženi kao global admini."
+
+msgid "Selected accounts were unmarked as domain admin."
+msgstr "Izabrani nalozi su neobeleženi kao domen admini."
+
+msgid "Selected accounts were unmarked as global admin."
+msgstr "Izabrani nalozi su neobeleženi kao global admini."
+
+msgid "Selected domains have been deleted."
+msgstr ""
+
+msgid "Selected domains were disabled."
+msgstr "Izabrani domeni su onemogućeni."
+
+msgid "Selected domains were enabled."
+msgstr "Izabrani domeni su omogućeni."
+
+msgid "Selected log records were deleted."
+msgstr "Izabrani dnevnici zapisa su obrisani."
+
+msgid "Server Load"
+msgstr "Opterećenje servera"
+
+msgid ""
+"Server-side size limit exceeded. Please increase \"sizelimit\" in your "
+"LDAP server."
+msgstr ""
+"Server-side ograničenje veličine premašen. Molimo povećajte \"sizelimit\""
+" na vašem LDAP serveru."
+
+msgid "Session expired, please re-login."
+msgstr "Sessija istekla, molimo ponovo se prijavite na sistem."
+
+msgid "Set to 0 for unlimited."
+msgstr "Postaviti na 0 za neograničeno."
+
+#, python-format
+msgid "Some addresses have been discarded because they have been used: %s."
+msgstr ""
+
+msgid "Standalone admin account cannot be an user of local domain."
+msgstr ""
+
+msgid "Store password in plain text"
+msgstr "Snimi lozinku kako običan tekst"
+
+msgid "Stored"
+msgstr "Uskladišten"
+
+msgid "Stored emails"
+msgstr "Uskladištene pošte"
+
+msgid "Submit"
+msgstr "Primeni"
+
+msgid "Submited domain name is incorrect."
+msgstr "Predato ime domena je netačno."
+
+msgid "Support"
+msgstr "Podrška"
+
+msgid "System Information"
+msgstr "Informacije sistema"
+
+msgid "Telephone Number"
+msgstr "Broj telefona"
+
+msgid "Time"
+msgstr "Vreme"
+
+msgid "Time zone"
+msgstr ""
+
+msgid "Unban IP address"
+msgstr ""
+
+msgid "Unlimited"
+msgstr "Neograničen"
+
+msgid "Unmark as domain admin"
+msgstr "Demarkiraj kao domen admin"
+
+msgid "Unmark as global admin"
+msgstr "Demarkiraj kao global admin"
+
+msgid "Unrestricted"
+msgstr "Neograničen"
+
+msgid "Update whitelists and blacklists"
+msgstr "Dodaj belu listu"
+
+msgid "Uptime"
+msgstr "Uptime"
+
+msgid "Use this password"
+msgstr ""
+
+msgid "Used"
+msgstr "Upotrebljen"
+
+msgid "User"
+msgstr "Korisnik"
+
+msgid "User created."
+msgstr "Korisnik napravljen."
+
+msgid "User login (self-service)"
+msgstr ""
+
+msgid "User/Employee ID"
+msgstr "Korisnik/Zaposlen ID"
+
+msgid "Username"
+msgstr "Korisničko ime"
+
+msgid "Username must be an valid email address."
+msgstr "Korisničko ime mora biti ispravana e-poštanska adresa."
+
+msgid "Username or password is incorrect."
+msgstr "Koriničko ime ili lozinka nije odgovarajuća."
+
+msgid "Users"
+msgstr "Korisnici"
+
+#, python-format
+msgid "Users under domain: %s"
+msgstr "Korisnici pod domenom: %s"
+
+msgid "Users under same domain"
+msgstr ""
+
+msgid "Users under same domain and its sub-domains"
+msgstr ""
+
+msgid "Who can send email to this list"
+msgstr "Ko može da šalje poštu na ovu listu"
+
+msgid "You are not allowed to update global domain admin's profile."
+msgstr ""
+
+msgid "or longer than"
+msgstr ""
+
+msgid "without verifying local recipients"
+msgstr ""
+
