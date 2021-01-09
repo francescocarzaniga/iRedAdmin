@@ -23,28 +23,17 @@ def verify_bind_dn_pw(dn, password, conn=None):
         conn = _wrap.conn
 
     try:
-        # bind as vmailadmin
-        conn.bind_s(settings.ldap_bind_dn, settings.ldap_bind_password)
-        if conn.whoami_s() != "dn:"+settings.ldap_bind_dn:
-            return (False, 'INVALID_CREDENTIALS')
-
         # keep rest of syntax as it is, add new connection for user bind which is immediately destroyed
-        conn_user = ldap.initialize(uri)
-        conn_user.set_option(ldap.OPT_PROTOCOL_VERSION, ldap.VERSION3)
-        if starttls:
-            conn_user.start_tls_s()
-
+        # need to bind and unbind since LDAPWrap works only for vmailadmin        
+        _wrap_user = LDAPWrap()
+        conn_user = _wrap_user.conn
+        conn_user.unbind_s()
         conn_user.bind_s(dn, password)
         user_whoami = conn_user.whoami_s()
         conn_user.unbind_s()
 
         if user_whoami == "dn:"+dn:
-            if close_connection:
-                conn.unbind_s()
-                return (True, )
-            else:
-                # Return connection
-                return (True, conn)
+            return (True, )
         else:
             return (False, 'INVALID_CREDENTIALS')
     except Exception as e:
