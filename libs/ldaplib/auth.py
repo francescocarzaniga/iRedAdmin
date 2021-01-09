@@ -4,6 +4,7 @@ import web
 import ldap
 import settings
 from libs import iredutils, iredpwd
+from libs.logger import logger
 from libs.l10n import TIMEZONES
 
 from libs.ldaplib.core import LDAPWrap
@@ -22,13 +23,30 @@ def verify_bind_dn_pw(dn, password, conn=None):
         _wrap = LDAPWrap()
         conn = _wrap.conn
 
+    uri = settings.ldap_uri
+
+    # Detect STARTTLS support.
+    starttls = False
+    if uri.startswith('ldaps://'):
+        starttls = True
+
+        # Rebuild uri, use ldap:// + STARTTLS (with normal port 389)
+        # instead of ldaps:// (port 636) for secure connection.
+        uri = uri.replace('ldaps://', 'ldap://')
+
+        # Don't check CA cert
+        ldap.set_option(ldap.OPT_X_TLS_REQUIRE_CERT, ldap.OPT_X_TLS_NEVER)
+
+    conn_user = ldap.initialize(uri=uri)
+
+    # Set LDAP protocol version: LDAP v3.
+    conn_user.set_option(ldap.OPT_PROTOCOL_VERSION, ldap.VERSION3)
     try:
-        # keep rest of syntax as it is, add new connection for user bind which is immediately destroyed
-        # need to bind and unbind since LDAPWrap works only for vmailadmin        
-        _wrap_user = LDAPWrap()
-        conn_user = _wrap_user.conn
-        conn_user.unbind_s()
+        if starttls:
+            conn_user.start_tls_s()
+
         conn_user.bind_s(dn, password)
+
         user_whoami = conn_user.whoami_s()
         conn_user.unbind_s()
 
@@ -37,6 +55,7 @@ def verify_bind_dn_pw(dn, password, conn=None):
         else:
             return (False, 'INVALID_CREDENTIALS')
     except Exception as e:
+        logger.warning(f"Error during login: {repr(e)}")
         return (False, repr(e))
 
 
