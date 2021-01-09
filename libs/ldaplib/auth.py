@@ -4,7 +4,6 @@ import web
 import ldap
 import settings
 from libs import iredutils, iredpwd
-from libs.logger import logger
 from libs.l10n import TIMEZONES
 
 from libs.ldaplib.core import LDAPWrap
@@ -55,7 +54,6 @@ def verify_bind_dn_pw(dn, password, conn=None):
         else:
             return (False, 'INVALID_CREDENTIALS')
     except Exception as e:
-        logger.warning(f"Error during login: {repr(e)}")
         return (False, repr(e))
 
 
